@@ -1,3 +1,5 @@
+var domain = "http://smart-class.cambium-team.com/dataManagement/";
+
 var smartClassApp = angular.module('smartClassStudentApp', ['ui.router']);
 
 //fileter to show HTML as HTML exe: <p ng-bind-html="data.html | htmlTrue">
@@ -28,7 +30,7 @@ smartClassApp.factory('classAjax', ['$http', '$q', function ($http, $q) {
             var deferred = $q.defer();
 
             $http({
-                url: 'http://smart-class.cambium-team.com/dataManagement/json.api.php',
+                url: domain + 'json.api.php',
                 method: 'POST',
                 data: dataTransform
             }).
