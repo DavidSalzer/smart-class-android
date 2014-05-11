@@ -1,0 +1,23 @@
+<table class="teacher_lessons_table gradient">
+	<tr>
+		<th>#</th>
+		<th>Lesson name</th>
+		<th colspan="3">Actions</th>
+
+	</tr>
+	
+	<tr data-ng-repeat="item in data.lessons" data-ng-switch on="{{item.isActive}}" data-ng-class="{'done_lesson':item.activeSid>0}">
+		<td class="teacher_lesson_number">{{$index+1}}</td>
+		<td class="teacher_lesson_name">
+				<div  data-ng-switch-when="1" class="donehalf_lesson_icon"></div>
+				<div  data-ng-switch-when="0" data-ng-class="{'done_lesson_icon':item.activeSid>0,'donenot_lesson_icon':!item.activeSid}"></div>
+							
+			<span class="lesson_text">{{item.name}}</span>
+		</td>
+		<td  data-ng-click="playLesson(item.lid)" class="play_icon table_actions">
+				<div class="icon"></div>
+				<span>Play</span>
+		</td>
+	</tr>
+</table>
+			

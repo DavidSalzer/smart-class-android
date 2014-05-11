@@ -1,0 +1,10 @@
+    <div class="slides_wrapper">
+        <!-- <div class="slide_item" id="play_teacher_new_questions">
+            <div class="add_new_slide_icon">+</div>
+            <div class="slide_text">Add New Slide</div>
+        </div> -->
+        <div data-ng-repeat="item in slidesList().slide"  data-ng-class="{'slide_item':true,'done_slide':(item.isPublish==1&&!item.slideId),'selected_blue':item.slideId==activeSlideId()}" data-ng-click="displayPreview($index)">
+            <div class="slide_number">{{item.index}}</div>
+            <div class="slide_text">{{item.title}}</div>
+        </div>
+    </div><!--end of slides wrapper-->

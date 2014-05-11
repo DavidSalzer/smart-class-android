@@ -1,0 +1,200 @@
+/*************************************************************************************
+table of content 
+0.1 slides navigation
+0.2 navigation
+0.3 footer navigatioon
+
+*********************************************************************************** */
+
+.teacher_main_wrapper{
+	width:100%;
+	height:100%;
+	overflow-x:hidden;
+  overflow-y:hidden;
+}
+.header_back{
+ background: #f4f4f4;
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y0ZjRmNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ1JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlYWVhZWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #f4f4f4 0%, #ffffff 45%, #eaeaea 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4f4f4), color-stop(45%,#ffffff), color-stop(100%,#eaeaea));
+background: -webkit-linear-gradient(top,  #f4f4f4 0%,#ffffff 45%,#eaeaea 100%);
+background: -o-linear-gradient(top,  #f4f4f4 0%,#ffffff 45%,#eaeaea 100%);
+background: -ms-linear-gradient(top,  #f4f4f4 0%,#ffffff 45%,#eaeaea 100%);
+background: linear-gradient(to bottom,  #f4f4f4 0%,#ffffff 45%,#eaeaea 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#eaeaea',GradientType=0 );
+
+}
+header{
+width:100%;
+height:10%;
+border-style: solid;
+border-width: 1px;
+border-color: rgb( 238, 237, 237 ); 
+position:relative;
+  
+}
+.top_ornament{
+position:absolute;
+z-index:20;
+background-image:url("../img/top_ornament.png");
+background-repeat: no-repeat;
+background-position: bottom right;
+width:98%;
+height:100%;
+}
+
+.main_logo{
+width:95px;
+height:95px;
+position:absolute;
+z-index:100;
+top:0px;
+left:0.5%;
+}
+
+.app_name_blue,.scholl_name_blue{
+color:#017a96;
+
+}
+.app_name, .scholl_name{
+margin-left:12%;	
+}
+.scholl_name{
+	margin-top:0px;
+
+}
+/* ********************************* 02 top navigation section *********************************  */
+nav {  
+  width:100%;
+  height:4%;
+  position:relative;
+}
+/* top navigation items*/
+#teacher_navigation{
+  float:right;
+  margin:0px;
+  width:70%;
+  margin-right:0.5%;
+ 
+}
+ul#teacher_navigation li{
+  color:#fff;
+  border-right:1px solid #fff;
+  float:right;
+  list-style:none;
+  height:100%;
+  padding:0px 2%;
+  cursor:pointer;
+}
+/*
+ul#teacher_navigation li.blue_menu_hover:hover{
+background-color:#0475a0;
+cursor:pointer;
+height:100%;
+}*/
+ul#teacher_navigation li a{
+  display:block;
+  color:#fff;
+  /*line-height: 3em;*/
+}
+
+
+ul#teacher_navigation li:first-child{
+     border-right:1px solid transparent;
+}
+
+/* ********************************* 03 footer section *********************************  */
+
+.back_blue{
+  background-image: -moz-linear-gradient( 90deg, rgb(43,149,192) 0%, rgb(89,179,211) 40%, rgb(134,209,230) 82%, rgb(110,198,223) 97%, rgb(61,181,230) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(43,149,192) 0%, rgb(89,179,211) 40%, rgb(134,209,230) 82%, rgb(110,198,223) 97%, rgb(61,181,230) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(43,149,192) 0%, rgb(89,179,211) 40%, rgb(134,209,230) 82%, rgb(110,198,223) 97%, rgb(61,181,230) 100%);
+  
+}
+/*
+.back_blue:hover{
+background: #4dabce;
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNGRhYmNlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM0ZGFiY2UiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNGRhYmNlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+background: -moz-linear-gradient(45deg,  #4dabce 0%, #4dabce 0%, #4dabce 100%);
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#4dabce), color-stop(0%,#4dabce), color-stop(100%,#4dabce));
+background: -webkit-linear-gradient(45deg,  #4dabce 0%,#4dabce 0%,#4dabce 100%);
+background: -o-linear-gradient(45deg,  #4dabce 0%,#4dabce 0%,#4dabce 100%);
+background: -ms-linear-gradient(45deg,  #4dabce 0%,#4dabce 0%,#4dabce 100%);
+background: linear-gradient(45deg,  #4dabce 0%,#4dabce 0%,#4dabce 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dabce', endColorstr='#4dabce',GradientType=1 );
+}
+*/
+
+.teacher_logout{
+-webkit-border-bottom-right-radius: 10px;
+-webkit-border-bottom-left-radius: 10px;
+-moz-border-radius-bottomright: 10px;
+-moz-border-radius-bottomleft: 10px;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-left:1px solid #d5d3d3;
+border-right:1px solid #d5d3d3;
+border-bottom:1px solid #d5d3d3;
+width:100px;
+height:30px;
+float:right;
+text-align:center;
+margin-right:1%;
+cursor:pointer;
+}
+
+.teacher_popup_header p{
+color:#5b5b5c;
+float:left;
+ margin-left:2%;
+ font-weight:bold;
+}
+.teacher_popup_header{
+border-bottom: 1px solid #c5c6c6;
+border-top:1px solid transparent;
+border-right:1px solid transparent;
+border-left:1px solid transparent;
+height:8%;
+width:99.5%;
+margin:auto;
+}
+
+#teacher_close_pop_up{
+ /* float:right;*/
+  margin-right:2%;
+}
+#teacher_close_pop_up{
+  cursor:pointer;
+}
+.teacher_play_but{
+  cursor:pointer;
+}
+/*pop up header */
+.teacher_popup_header{
+  display:table;
+
+}
+
+#teacher_popup{
+  position:absolute;
+  z-index:9999999999;
+  background-color:#fff;
+  background-position:center center;
+  background-repeat:repeat,repeat;
+  margin:auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(110,109,110,1);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(110,109,110,1);
+  box-shadow: 7px 7px 5px 0px rgba(110,109,110,1);
+  width:80%;
+  height:90%;
+}
+
+
+
+
+
+
+

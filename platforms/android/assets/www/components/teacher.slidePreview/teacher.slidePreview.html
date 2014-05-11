@@ -1,0 +1,39 @@
+<style>
+        #teacher_popup{
+            margin-top: 5%;
+            left: 0;
+            right: 0;
+            top: 0;
+			overflow-y: scroll;
+        }
+		
+		#mask_overlay{
+			background-color:rgba(0,0,0,.3);
+			position:fixed;
+			left:0;
+			height:100%;
+			top:0;
+		}
+</style>
+<div id="teacher_popup" class="window_width_param radious_6">
+    <header class="teacher_popup_header">
+        <div class="table_row">
+            <p class="table_cell add_new_header">Add New Slide</p>
+            <p class="table_cell hide preview_header">02 – slide name goes here  </p>
+            <div id="teacher_close_pop_up" data-ui-sref="playLesson" class="table_cell float-right">
+                <span class="pop_up_close_text">Close</span><span class="popup_close_blue">x</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="preview_slides_container">
+
+        <section class="teacher_display ">
+            <div data-ui-view="slide" class="teacher_display_wrapper"></div>
+        </section>
+
+    </section>
+
+</div>
+
+<div id="mask_overlay"></div>

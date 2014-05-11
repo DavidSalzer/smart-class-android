@@ -1,0 +1,29 @@
+<div class="student_content_wrapper">
+    <!-- ****************groups matching question********************************************* -->
+    <div class="question_bank">
+        <h3 class="text_header_blue"> Instruction text comes here
+        </h3>
+        <div class="text_bank_wrapp">
+        <span ng-repeat="text in textBankFix">
+            <span>{{text.html}}</span>
+            <span class="question_bank_place" data-ng-show="text.type" data-ng-click="fillMe($index)">
+            <span class="question_bank_input bank_group_item_{{blanckMatch[$index+1].wordIndex}}" ng-show="blanckMatch[$index+1].wordText">{{blanckMatch[$index+1].wordText}}</span>   
+            </span>
+        </span>
+          
+        </div>
+        <div class="words_bank_wrapp" >
+            <div class="word_bank bank_group_item_{{$index+1}}"  data-ng-repeat="word in data.wordArray" ng-click="wordMe($index)" ng-class="{'opacity':word.opacity}">{{word.text}}</div>
+            <!--<div class="word_bank bank_group_item_1">variations</div>
+            <div class="word_bank bank_group_item_2">believable</div>
+            <div class="word_bank bank_group_item_3">chunks</div>
+            <div class="word_bank bank_group_item_4">handful</div>
+            <div class="word_bank bank_group_item_5">words</div>
+            <div class="word_bank bank_group_item_6">Lorem Ipsum</div>
+            <div class="word_bank bank_group_item_7">publishing</div>-->
+            <div class="clearfix"></div>
+        </div>
+        <div class="send_blue_but" data-ng-click="send()">SEND</div>
+    </div><!-- end of question_bank -->
+    <div>&nbsp;</div><!-- >pseoudo item for  bottom padding -->
+</div>

@@ -1,0 +1,366 @@
+/* iPads (landscape) ----------- */
+ @media only screen and (max-width: 1024px){
+
+/* production */
+
+/*	@media only screen
+	and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : landscape){*/
+
+body{
+	font-size:0.9em;
+}
+/* center noatbook */
+#open_window,#open_window_tfila{
+		margin-left:0;
+	}
+
+	#open_window{
+		padding-bottom:2%;
+	}
+	/*seker multiple */
+	.seker_multiple{
+	  height:90%;
+	}
+	/*paried display */
+	.paried_wrapp{
+		  margin-top:15%;
+	}	
+	/*mekorot 1 -up down  */
+	.mekorot_ver2_wrapp{
+		
+	}
+	/*mekorot 3 animation */
+	.book_container{
+		left:65px;
+	}
+	.book_content{
+		width:380px;
+	}
+	.flip_book_right,.flip_book_left{
+	  width:80px;
+	}
+	.flip_book_right{
+	left:300px;
+
+	}
+	/* full video display */
+	.youtube_frame_full{
+ 
+ 	height:450px;
+	}
+
+}
+
+
+
+/* iPads (portrait) ----------- */
+
+@media only screen and (max-width: 768px) and (min-height:1024px){
+   /* production*/
+  
+/*@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait){*/	
+ 
+ 	.main_student_container {
+	
+	height:85% !important;
+	width:80% !important;
+	
+	}
+
+	/*noatbook placment */
+	.noatbook_but_1 {
+    transform: rotate(-9deg);
+	}
+	.noatbook_but_2 {
+    transform: rotate(-18deg);
+	}
+	.student_content_wrapper{
+width:90%;
+	}
+
+		/* youtube */
+	.video_wrapper{
+	 
+	  width:492px;
+	  height:430px;
+	}
+	.tv{
+	 background-image:url("../img/tv_portrait.png");
+	 background-repeat:no-repeat;
+	 width:492px;
+	 height:430px;
+
+	}
+	.youtube_frame{
+	  width:370px; 
+	  height:320px;
+	}
+
+	/* noatbook operations */
+	#open_window,#open_window_tfila{
+		margin-left:2.5%;
+		
+	}
+	.noatbook_back_pins{
+	margin-bottom:850%;
+	}
+	/* tfila */
+	.tfila_item_cell{
+	  padding:3% 8% ;
+	}
+	.tfila_table_wrapper{
+	  width:100%;
+	}
+	/* paring question */
+		.paring_group_item_wrapper{
+	}
+	/* seker multiple */
+	.seker_multiple{
+	  height:80%;
+	}
+	.seker_multiple_wrapper{
+		padding-bottom:10%;
+	}
+	/* item matching */
+	.item_match{
+		width:80% !important;
+	}
+	/*paried display */
+	.paried_wrapp{
+		  margin-top:15%;
+	}
+	/*mekorot 3 animation */
+	.book_container{
+		left:75px;
+	}
+	.book_content{
+		width:350px;
+	}
+	.flip_book_right,.flip_book_left{
+	  width:80px;
+	}
+	.flip_book_right{
+	left:270px;
+
+	}
+
+}
+
+/* Android Tablet 800x1280 (portrait) ----------- */
+  /*@media only screen and (max-width: 800px) and (min-height:1280px){*/
+ /*production */
+ 
+  @media only screen
+    and (min-device-width : 800px)
+    and (max-device-width : 1280px)
+    and (orientation : portrait) {
+
+    .main_student_container {
+    	margin-top:10%;
+    	width:80%;
+    	height:70%;
+    }	
+
+	.noatbook_but_1, .noatbook_but_2 {
+		left:10%;
+	}		/* youtube */
+	.video_wrapper{
+	  width:492px;
+	  height:430px;
+	}
+	.tv{
+	  background-image:url("../img/tv_portrait.png");
+	  background-repeat:no-repeat;
+	 width:492px;
+	  height:430px;
+
+	}
+	.youtube_frame{
+	  width:370px; 
+	  height:320px;
+	}
+
+	/* noatbook operations */
+	.noatbook_back_pins{
+	margin-bottom:1250%;
+	}
+
+	/* tfila */
+	.tfila_item_cell{
+	  padding:3% 7% ;
+	}
+	.tfila_table_wrapper{
+	  width:110%;
+	}
+	/*paried display */
+	.paried_wrapp{
+		  margin-top:15%;
+	}
+	/*mekorot 3 animation */
+	.book_container{
+		left:55px;
+	}
+	.book_content{
+		width:350px;
+	}
+	.flip_book_right,.flip_book_left{
+	  width:80px;
+	}
+	.flip_book_right{
+	left:270px;
+
+	}
+
+}
+/*android 1280x800 landscape */
+/*@media only screen and (max-width : 1280px) and (max-height: 800px) {*/
+/* production */
+  @media only screen
+    and (min-device-width : 800px)
+    and (max-device-width : 1280px)
+    and (orientation : portrait) {
+    }
+   /*seker multiple */
+		.seker_multiple{
+		  height:135%;
+		  text-align:center;
+		}
+}
+
+/*  android portarait 1024x600 p*/
+/* android 1024x600 landscape */
+/*@media only screen and (max-width : 1024px) and (max-height: 600px) {*/
+ /*production */
+    @media only screen
+    and (min-device-width : 600px)
+    and (max-device-width : 1204px)
+    and (orientation : portrait) {
+
+	/* tfila */
+		.tfila_item_cell{
+		  padding:3% 8% ;
+		}
+	.tfila_table_wrapper{
+	  width:110%;
+	}
+		/*seker multiple */
+		.seker_multiple{
+		  /*height:135%;*/
+		  text-align:center;
+		}
+
+}
+
+/* android 600x1024 portrait */
+/*@media only screen and (max-width : 600px) and (max-height: 1024px) {*/
+	/* production*/
+ @media only screen
+    and (min-device-width : 600px)
+    and (max-device-width : 1204px)
+    and (orientation : portrait) {
+
+
+
+	}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px)  {
+	.main_student_container {
+		width:65%;
+		left:20%;
+	}
+	.noatbook_but_1, .noatbook_but_2 {
+	left:16.3%;
+	}
+	/* center noatbook*/
+	#open_window,#open_window_tfila{
+		margin-left:3%;
+	}
+	#open_window{
+		padding-bottom:2%;
+		
+	}
+	/*seker multiple */
+	.seker_multiple{
+	  height:95%;
+	  text-align:center;
+	}
+	/*match items version 2 */
+		.match_items_row{
+		  width:45%;
+		} 
+
+}
+
+/* 1280X600 LEPTOP*/
+@media only screen 
+and (max-width : 1280px) and (max-height: 600px) {
+
+		.noatbook_back_pins{
+			margin-left:40%;
+			margin-top:20%;
+			margin-bottom:400%;
+		}
+
+		#open_window{
+			padding-bottom:4%;
+			margin-top:-2%;
+		}	
+			/*seker multiple */
+		.seker_multiple{
+		  height:125%;
+		  text-align:center;
+		}
+		/*match items version 2 */
+		.match_items_row{
+		  width:45%;
+		} 
+	}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+.main_student_container {
+		width:55%;
+		left:20%;
+	}
+		/* center noatbook*/
+	#open_window,#open_window_tfila{
+		margin-left:-3% !important;
+		margin-top:-2%;
+	}
+	/*seker multiple */
+	.seker_multiple{
+	  height:90%;
+	}
+	/*mekorot version 2 */
+	.mekorot_ver2_wrapp{
+		margin-left:15%;
+	}
+	/* mekorot version 3 */
+	.book_content,.flip_book_right,.flip_book_left{
+		padding:1% 0px;
+	}
+	/*match items version 2 */
+	.match_items_row{
+	  width:45%;
+	} 
+	
+/* retina display ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+ 
+
+}

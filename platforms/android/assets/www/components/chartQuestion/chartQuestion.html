@@ -1,0 +1,74 @@
+<style>
+ul.chart_anim{
+	width:80%;
+	height:100%;
+	list-style-type: none;
+	margin-left:10%;
+	margin-right:auto;
+	background-image: url("../img/graph_back.png");
+	background-repeat: repeat-x;
+	text-align:center;
+	padding:0px;
+    display: inline-block;
+}
+ul.chart_anim li{
+float:left;
+margin-top: 1.5625em !important;
+
+}
+.bar {
+width:100px;
+height:300px;
+list-style-type:none;
+    position:relative;
+    margin-right:10px;
+}
+.bar p {
+background-color:#63F;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    text-align:center;
+}
+.bar span {
+padding-left:15px;
+left:100%;  
+color:#fff;
+}
+#content ul {
+list-style-type:none;
+}
+#content ul li {
+float:left;
+margin:50px;
+}
+.h5{
+	margin-top:-10%;
+}
+.graph_header{
+	margin-top:10% !important;
+
+	margin:auto;
+}
+.bar p{
+   height:20px;
+   transition:all 3.5s ease-in-out; 
+  }
+</style>
+<h3 class="text_header_blue graph_header">Graph header goes here</h3>
+<ul class="chart_anim">
+    <li data-ng-repeat="item in data.chart">
+        <div class="bar">
+            <p id='chart{{$index}}' style="background-color:{{item.color}};display:block">
+                <span style="background-color:{{item.color}};display:block">{{item.rank}}</span>
+            </p>
+        </div>
+        <h5 class="h5">{{item.name}}</h5>
+    </li>
+</ul>
+<div class="clearfix"></div>
+
+
+
+<div>&nbsp;</div><!-- >pseoudo item for  bottom padding -->

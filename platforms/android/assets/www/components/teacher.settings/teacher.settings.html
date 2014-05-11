@@ -1,0 +1,62 @@
+<!--<style>
+    #teacher_popup{
+        display: none;
+    }
+</style>-->
+<header ui-view="header" class="gradient header_back"></header>
+<nav ui-view="nav" class="back_blue gradient"></nav>
+<section class="settings_container">
+    <div class="settings_header">
+        <select class="settingsd_select_class"  ng-model='value' ng-change='select(value)' >
+            <option value=''>Select Class</option>
+            <option value='{{class.cid}}' data-ng-repeat="class in data.classes " >{{class.name}}</option>
+        </select>
+
+        <a class="add_pupils_but" id="add_pupil_but" data-ng-click="openAddStudentPopup()">
+            <span class="settings_plus_icon">+</span>
+            <span>Add Pupils</span>
+        </a>
+    </div><!-- end of seeting header -->
+    <table class="setting_table">
+        <tr data-ng-repeat="student in data.students">
+            <td class="settings_name">{{student.firstName}} {{student.lastName}} {{student.userName}}</td>
+            <td class="settings_password"><a data-ng-click="changePassword($index)">Change Password</a></td>
+            <td class="settings_delete"><a data-ng-click="deleteStudent($index)">Delete</a></td>
+            <td class="settings_learn"><label><input type="checkbox" name="checkbox" value="value" data-ng-click="learningDisabilities($index)"> Learning disabilities</label></td>
+        </tr>
+
+
+    </table>
+</section>
+
+<div id="teacher_popup" class="setting_param_width" data-ng-show="showAddStudentPopup" style=" top: 238.5px; left: 674.5px;">
+    <header class="teacher_popup_header">
+        <div class="table_row">
+            <p class="table_cell">Add Pupil</p>
+            <div id="teacher_close_pop_up" class="table_cell float-right" data-ng-click="closeAddStudentPopup()">
+                <span class="pop_up_close_text">Close</span><span class="popup_close_blue" >x</span>
+            </div>
+        </div>
+    </header>
+    <section class="add_pupil_form">
+        <form>
+            <p>Full Name</p>
+            <input type="text" data-ng-model="userData.fullName">
+            <p>User Name</p>
+            <input type="text" data-ng-model="userData.userName">
+            <p>password</p>
+            <input type="text" data-ng-model="userData.password">
+            <div class="setting_buts_table">
+
+                <div class="float-left add_pupils_but_popup">
+                    <a  data-ng-click="saveStudentAndClose()">Save & finish</a>
+                </div>
+                <div class="float-left add_pupils_but_popup ">
+                    <a data-ng-click="saveStudent()">Save & Add another</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+        </form>
+    </section>
+</div>

@@ -1,0 +1,56 @@
+<!-- text paragraph -->
+<!-- selection question -->
+<style>
+/*-------------------------------------------    CSS זמני עבור פופאפ ------------------------------*/
+#mask_overlay{
+	background-color:rgba(0,0,0,.3);
+	position:fixed;
+	left:0;
+	height:100%;
+	top:0;
+}
+#open_window_tfila {
+    top: 0;
+    width: 40%;
+    left: 0;
+	right: 0;
+    margin: 5% auto !important;
+    padding-bottom: 2%;
+    height: 71%;
+ }
+</style>
+<div class="tfila_object">
+    <p class="text">
+			{{data.text}}
+    </p>
+    <div class="tfila_table_wrapper">
+        <div calss="tfila_table">
+            <div class="table_row">
+                <div class="tfila_item_cell" data-ng-repeat="item in data.prayers | limitTo:2">
+                    <span class="tfila_item" data-ng-click="openPopUp($index)">{{item.title}}</span>
+                </div>
+              </div>
+            <div class="table_row">
+                <div class="tfila_item_cell" data-ng-repeat="item in data.prayers | limitTo:-2">
+                    <span class="tfila_item" data-ng-click="openPopUp($index)">{{item.title}}</span>
+                </div>
+            </div>
+        </div>
+    </div><!-- end of tfila_table_wrapper -->
+    <!-- tfila pop up -->
+    <div id="mask_overlay" ng-show="prayerPopup">
+    <div id="open_window_tfila" ng-show="prayerPopup">
+        <div id="close_tfile_object_pop_up" data-ng-click="hidePopUp()"><span class="pop_up_close_text">Close</span><span class="popup_close_blue" >x</span></div>
+        <h2 class="tfila_object_header">{{popUpTitle}}</h2>
+
+        <div class="tfila_text">
+            <p>{{prayerPopup}}</p>
+            <div class="tfila_ornament_top_left"></div>
+            <div class="tfila_ornament_top_right"></div>
+            <div class="tfila_ornament_bottom_right"></div>
+            <div class="tfila_ornament_bottom_left"></div>
+        </div>
+
+    </div>
+    </div>
+</div><!--end of tfila_object -->

@@ -1,0 +1,777 @@
+/* iPads (landscape) ----------- */
+/* @media only screen and (max-width: 1024px){*/
+
+ /*production*/ 
+
+	@media only screen
+	and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : landscape){
+   
+	body{
+		font-size:0.9em;
+	}
+
+
+	nav{
+		height:5%;
+	}
+	.main_logo{
+		width:110px;
+		height:110px;
+	}
+	.header_text{
+		margin-left:4%;
+	}
+	 .top_ornament{
+		background-size:283px 47px;
+		width:95%;
+	}
+	/*  table of lessons displayed to the student*/
+	.lesson_select_container{
+		width:90%;
+	}	
+	.lesson_select_table{
+		width:90%;
+	}
+	.lesson_name{
+	  width:70%;
+	}
+	/* teacher - lesson table */
+	.teacher_lesson_name{
+	width:50%;
+	padding-right:5%!important;	
+	}
+	.table_actions{
+	width:15%;
+	}
+	.teacher_lessons_container td{
+		padding:2.7%;
+		font-size:0.9em;
+	}
+	.teacher_lessons_container th{
+		padding:1% 3%;
+	}
+	
+	.teacher_lesson_number{
+		font-size:1.2em !important;
+	}
+	.resaults_icon,.merge_icon,.prepare_icon{
+		width:10% !important;
+	}
+	.play_icon{
+		width:10% !important;
+	}
+	/* display new slides window */
+	#teacher_popup{
+		height:90% 
+	}
+
+	.newSlide_icon_wrapper{
+		margin:1% 2% !important;
+	}
+	/* play lesson navigation  */
+	.stop_lesson_icon,.connected_lesson_icon{
+		font-size:1.7em !important;
+	}
+	/* settings */
+	.settings_name{
+		width:35%;
+	}
+	.settings_password{
+		width:15%;
+	}
+	.settings_delete{
+		width:20%;
+	}
+	.settings_learn{
+		width:20%;
+	}
+	.setting_param_width{
+	height:60% !important;
+	}
+	
+}
+
+
+
+/* iPads (portrait) ----------- */
+
+/*@media only screen and (max-width: 768px) and (min-height:1024px){*/
+   	
+
+   /* production*/
+  
+ @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait){
+
+	
+	body{
+		font-size:0.9em;
+	}
+	nav{
+		height:3% !important;
+	}
+	.main_logo{
+		width:105px;
+		height:105px;
+	}
+	header{
+		height:7%;
+	}
+	 .top_ornament{
+		background-size:283px 47px;
+		width:95%;
+	}
+	.action_icon_wrapper{
+		height:7% !important;
+	}
+	.header_text{
+		margin-top:1%;
+	margin-left:10%;	
+	}
+	.action_panel_width{
+		width:7%;
+	}
+	.teacher_display_width{
+		width:72.5%;
+	}
+	/*  table of lessons displayed to the student*/
+	.lesson_select_container{
+		width:100%;
+	}	
+	.lesson_select_table{
+		width:90%;
+	}
+	/* teacher lesson table */
+	.teacher_lesson_name{
+	width:30%;
+	padding-right:5% !important;	
+	}
+	.table_actions{
+	width:15%;
+	font-size:0.8em;
+	}
+	.teacher_lessons_container td{
+		padding:2.7%;
+		font-size:0.85em;
+	}
+	.teacher_lessons_container th{
+		padding:1% 3%;
+	}
+	.teacher_lesson_number{
+		width:4%;
+		font-size:1.2em !important;
+	}
+	.merge_panel{
+	font-size:1em;
+	}
+	.resaults_icon,.merge_icon,.prepare_icon{
+		width:10% !important;
+	}
+	.play_icon{
+		width:15% !important;
+	}
+	/* display new slides window */
+	#teacher_popup{
+		height:85%;
+		width:75%;
+	}
+	.setting_param_width{
+	height:50% !important;
+}
+	/* play lesson */
+	.status_table td{
+	padding-top:1.8% !important;
+	padding-bottom:1.8% !important;
+	}
+	.panel_student_question{
+	width:68%;
+	}
+	.student_buble{
+		margin-left:3%;
+	}
+	/* settings */
+	.settings_name{
+		width:35%;
+	}
+	.settings_password{
+		width:15%;
+	}
+	.settings_delete{
+		width:30%;
+	}
+	.settings_learn{
+		width:20%;
+	}
+	/* paring groups */
+	.paring_groups_wrapper{
+
+	height:85%;
+	overflow-y:scroll;
+	}
+
+	
+}
+
+/* Android Tablet (portrait) ----------- */
+ /*@media only screen and (max-width: 800px) and (min-height:1280px){*/
+ /*production */
+ 
+  @media only screen
+    and (min-device-width : 800px)
+    and (max-device-width : 1280px)
+    and (orientation : portrait) {
+  
+	header{
+		height:6%;
+	}
+	.header_text{
+		margin-left:5%;
+	}
+	nav{
+		height:3.4%;
+	}
+	
+	.action_panel_width{
+		width:9%;
+		}
+	.teacher_display_width{
+		width:70.5%;
+	}
+	/*  table of lessons displayed to the student*/
+	.lesson_select_container{
+		width:100%;
+	}	
+	.lesson_select_table{
+		width:90%;
+	}
+	.lesson_name{
+	  width:70%;
+	}
+	/* teacher lesson table */
+	.teacher_lesson_name{
+	width:30%;
+	padding-right:5% !important;	
+
+	}
+	.table_actions{
+	width:15%;
+	font-size:0.8em;
+	}
+	.teacher_lessons_container td{
+		padding:2.5%;
+		font-size:0.85em;
+	}
+	.teacher_lessons_container th{
+		padding:1% 3%;
+	}
+	.teacher_lesson_number{
+		width:5%;
+		font-size:1.2em !important;
+	}
+	.merge_panel{
+	font-size:1em;
+	}
+	.resaults_icon,.merge_icon,.prepare_icon{
+		width:10% !important;
+	}
+	.play_icon{
+		width:20% !important;
+	}
+	/* display new slides window */
+	#teacher_popup{
+		margin-top:-5%;
+		height:70% !important;
+		width:75% !important;
+	}
+	.newSlide_icon_wrapper{
+		margin:1% 2% !important;
+	}
+	/* play lesson */
+	.status_table td{
+	padding-top:1.8% !important;
+	padding-bottom:1.8% !important;
+	}
+	.panel_student_question{
+	width:68%;
+	}
+	.student_buble{
+		margin-left:3%;
+	}
+	.resaults_display_but{
+	margin-left:20%;
+	top:-10px;
+	}
+	#play_panel{
+	height:85%; 
+	}
+	/* paring groups */
+	.paring_groups_wrapper{
+
+	height:85%;
+	overflow-y:scroll;
+	}
+}
+
+/*android 1280x800 landscape */
+/*@media only screen and (max-width : 1280px) and (max-height: 800px) {*/
+/* production */
+   @media only screen
+    and (min-device-width : 800px)
+    and (max-device-width : 1280px)
+    and (orientation : portrait) {
+
+   .main_logo{
+	width:105px;
+	height:105px;*/
+} 	
+  
+/* teacher lesson table */
+	.teacher_lesson_name{
+	width:40%;
+	padding-right:10% !important;	
+	}
+	.table_actions{
+	width:12%;
+	font-size:0.8em;
+	}
+	.teacher_lessons_container td{
+		padding:2%;
+		font-size:0.85em;
+	}
+	.teacher_lessons_container th{
+		padding:1.5% 3%;
+		font-size:0.85em;
+	}
+	.teacher_lesson_number{
+		width:4%;
+		font-size:1.2em !important;
+	}
+	.merge_panel{
+	font-size:1em;
+	}
+	.resaults_icon,.merge_icon,.prepare_icon{
+		width:10% !important;
+	}
+	.play_icon{
+		width:10% !important;
+	}
+	/*prepare lesson */
+	.action_icon_wrapper{
+
+	}
+	/* display new slides window */
+	#teacher_popup{
+		margin-top:-2%;
+		height:85%;
+		width:60%;
+	}
+	/* teacher play lesson*/
+	.resaults_display_but{
+	margin-left:43%;
+	top:-15px;
+	}
+}
+
+/* android 1024x600 landscape */
+/*@media only screen and (max-width : 1024px) and (max-height: 600px) { */
+ /*production */
+    @media only screen
+    and (min-device-width : 600px)
+    and (max-device-width : 1204px)
+    and (orientation : portrait) {
+  
+  nav{
+  	height:5%;
+  }
+  .main_logo{
+	width:95px;
+	height:95px;
+}
+  .header_text{
+  	position:relative;
+  	top:-10px;
+  }
+/* teacher prepare lesson */
+  	.action_icon_wrapper{
+
+		height:19%;
+		padding-top:2%;
+	}
+
+	.action_panel_width{
+		width:9%;
+		}
+	.teacher_display_width{
+		width:70.5%;
+	}
+  /* teacher play lesson */
+
+  .resaults_icon,.merge_icon,.prepare_icon{
+		width:10% !important;
+	}
+	.play_icon{
+	width:15px;
+	height:15px;
+	}
+	/* teacher add new slide*/
+	#teacher_popup{
+		height:90%;
+		width:75%;
+		margin-top:-1%;
+		padding-bottom:1%;
+		overflow-y:scroll;
+	}
+	.newSlide_icon_wrapper{
+		margin:1% 2%;
+	}
+
+}
+
+/* android 600x1024 portrait */
+/*@media only screen and (max-width : 600px) and (max-height: 1024px) {*/
+	/* production*/
+ @media only screen
+    and (min-device-width : 600px)
+    and (max-device-width : 1024px)
+    and (orientation : portrait) {
+	/*  table of lessons displayed to the student*/
+	body{
+		font-size:0.95em;
+	}
+	header{
+		height:7%;
+	}
+	.header_text{
+		font-size:0.8em;
+		margin-left:10%;
+	}
+
+	/* -------------- teacher prepare lesson  -------------------*/
+  	.action_icon_wrapper{
+		height:10%;
+		padding-top:2%;
+	}
+
+	.action_panel_width{
+		width:12%;
+		}
+	.teacher_display_width{
+		width:67.5%;
+	}
+
+	/* student select lesson */
+	.lesson_select_container{
+		width:100%;
+	}	
+
+	.lesson_select_table{
+		width:90%;
+	}
+
+	.lesson_name{
+	  width:70%;
+	}
+	.go_icon{
+		width:10%;
+	}
+		/* teacher lesson table*/
+	.teacher_lessons_table{
+		width:100%;
+	}
+	.teacher_lesson_number{
+		font-size:0.9em;
+	}
+	.teacher_lesson_name{
+		width:45%;
+	}
+	.teacher_lessons_container td{
+		padding:2%;
+		font-size:0.85em;
+	}
+	.teacher_lessons_container th{
+		padding:1.5% 3%;
+		font-size:0.85em;
+	}
+	 .resaults_icon,.merge_icon,.prepare_icon{
+		width:12% !important;
+	}
+	.play_icon{
+		width:25% !important;
+	}
+	/* teacher add new slide*/
+	#teacher_popup{
+		height:75%;
+		width:90%;
+
+	}
+	.newSlide_icon_wrapper{
+		margin:1% 2%;
+	}
+	.question_items_wrapper{
+		margin-top:5%;
+	}
+	/* teacher play */
+		.panel_student_question{
+	width:68%;
+	}
+	.student_buble{
+		margin-left:3%;
+	}
+	.resaults_display_but{
+	margin-left:55%;
+	top:-40px;
+	}
+	/* play lesson menu items */
+	
+	.teacher_play_actions_item span{	
+	/*display:none;*/
+
+	}
+	.stop_lesson_icon{
+			font-size:1.4em !important;	
+	}
+		/* settings */
+	.settings_name{
+		width:40%;
+	}
+	.settings_password{
+		width:20%;
+	}
+	.settings_delete{
+		width:15%;
+	}
+	.settings_learn{
+		width:20%;
+	}
+
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+	.main_logo{
+		width:105px;
+		height:105px;
+	}
+	.header_text{
+		position:relative;
+		top:-10px;
+		left:-20px;
+	}
+	nav {  
+	  height:5%;
+	}
+	/* play buttons width */
+	.play_buts_wrapper{
+		width:25%;
+		 margin: 0px 0 0 -7%;
+	}
+	/* add new slides teacher */
+	#teacher_popup{
+		width:56%;
+	}
+	.window_width_param{
+	width:80% !important;
+	}
+
+	.newSlide_icon_wrapper{
+	float:left;
+	margin:1% 2%;
+	}
+	/* teacher play lesson*/
+	.resaults_display_but{
+	margin-left:43%;
+	top:-15px;
+	}
+	/* play lesson menu items */
+	.teacher_play_actions{
+	width:25%;
+	}
+	.teacher_play_actions_item{	
+		width:45%;
+	}
+}
+
+/* 1280X600 LEPTOP*/
+@media only screen 
+and (min-width : 1280px) and (max-height: 600px) {
+	nav{
+		height:5%;
+	}
+	.header_text{
+		position:relative;
+		top:-10px;
+		left:-20px;
+	}
+	.main_logo{
+		width:95px;
+		height:95px;
+	}
+	/* play buttons width */
+	.play_buts_wrapper{
+		width:25%;
+		 margin: 0px 0 0 -7%;
+	}
+
+
+	/* add new slide */
+
+
+#question_items_wrapper{
+width:100%;
+height:85%;
+margin:0px;
+padding-left:3.5%;
+float:left;
+overflow-y:scroll;
+
+}
+
+	#teacher_popup{
+		width:60%;
+		padding-bottom:1.5%;
+		margin-top:-1%;
+	}
+	.window_width_param{
+	width:80% !important;
+	}
+	.newSlide_icon_wrapper{
+	float:left;
+	margin:1% 2%;
+	}
+	/* teacher play lesson*/
+	.resaults_display_but{
+	margin-left:43%;
+	top:-15px;
+	}
+	/* play lesson navigation  */
+	.stop_lesson_icon,.connected_lesson_icon{
+		font-size:1.3em !important;
+	}
+	/* play lesson menu items */
+	.teacher_play_actions{
+	width:25%;
+	}
+	.teacher_play_actions_item{	
+		width:45%;
+	}
+
+
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+	.main_logo{
+		width:132px;
+		height:132px;
+	}
+	.edit_icon,.delete_icon,.new_icon,.preview_icon{
+	width:41px;
+	height:41px;
+	}
+	.header_text{
+		position:relative;
+		top:0px;
+		left:-20px;
+	}
+	.delete_icon,.preview_icon{
+	position:relative;
+	top:10px;
+	}
+	/* play buttons width */
+	.play_buts_wrapper{
+		width:18%;
+		 margin: 0px 0 0 -4.5%;
+	}
+	/* teacher display inner content */
+	.teacher_display_wrapper{
+		width:80%;
+	}
+	/* class-selection*/
+	.class_level_1{
+	padding:3% 2%;
+	}
+
+	.class_level_2 ul li{
+		padding:6% 5%;
+	}	
+	/* lesson table */
+	.teacher_lesson_name{
+		width:60%;
+	}
+	.table_actions{
+		width:12%;
+	}
+	/* teacher lessons */
+	
+	.teacher_lessons_table{
+		width:80%;
+		margin:auto;
+		margin-top:3%;
+	}
+	/* add new slides*/
+	#teacher_popup{
+		width:40%;
+		height:73%;
+
+	}
+	   .newSlide_icon_wrapper{
+		margin:3% 2% !important;
+	}
+	.window_width_param{
+	width:60% !important;
+	height:80% !important;
+	}
+	/* inner edit delet section in prepare state */
+	.edit_delete{
+	left:78%;
+	width:20%;
+	height:35px;
+	}
+
+	.inner_editDelete span{
+	}
+	/* play lesson student status table display */
+	.status_table td{
+	padding:0.9% 1%;
+
+	}
+	/* play lesson menu items */
+	.teacher_play_actions{
+	width:20%;
+	}
+	.teacher_play_actions_item{	
+		width:45%;
+	}
+	.setting_param_width{
+	width:30% !important;
+	height:50%!important;
+	}
+	.connected_lesson_icon{
+		line-height:40px;
+		width:45px;
+	}
+	.stop_lesson_icon{
+		width:45px;
+	}
+
+}
+
+/* retina display ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+ 
+
+}

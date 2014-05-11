@@ -1,0 +1,44 @@
+<header>
+	<i  class="header_tri_left_blue"><i></i></i>
+	<div class="header_blue"><span class="header_font">{{ data.title }}</span></div>
+	<i class="header_tri_right_blue"><i></i></i>
+</header>
+<div class="header_line">
+	<div class="hello_student_blue">Hello {{ data.user }}</div>
+</div>
+	<div class="wrap">
+		<div class="student_content_wrapper" data-ui-view="main">
+
+	
+			
+
+
+
+			
+			
+			
+
+		</div><!--end of student content wrapp -->
+ 
+	</div><!-- end of wrap -->	
+
+
+
+
+	<!--  ********************************** footer ********************************************** -->
+	<div class="footer_main">
+		<div style="height:5px;">
+			<div  class="footer_circle_left"></div>
+			<div class="footer_circle_right"></div>
+		</div>
+
+		<div class="inner_footer blue_footer">
+			<div class="next_prev_wrapper">
+					<a ng-class="{'but_disable':endBack}" class="prev_btn_blue" ng-click="navSlide('back')"> < Back</a>
+					<a ng-class="{'but_disable':endNext}" class="next_btn" ng-click="navSlide('next')">Next ></a>
+			</div>
+		</div>
+	</div>
+
+<!-- notebook -->
+<div id="notebook_but" class="notebook_display"></div>

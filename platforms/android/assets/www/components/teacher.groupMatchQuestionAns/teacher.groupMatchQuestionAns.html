@@ -1,0 +1,156 @@
+<!-- ****************groups matching question********************************************* -->
+<div  class="global_groups_container">
+	<p class="instruction text_header_blue">{{data.text}}</p>
+
+	<!-- ========================================================================== -->
+	<!-- *************************** GROUPS SECTION******************************** -->
+	<!-- ========================================================================== -->
+	<div class="g_groups_container g_groups_container_resaults">
+
+	<!-- ***************************** group 1 ************************************ -->
+	
+		<div data-ng-repeat="object in data" class="paringroup_container paringroup_container_resaults">
+			<div class="paring_group_groups_circ_blue"></div>
+			<div class="pg_container_blue">
+				<div class="paring_group_groups_backImg_blue"></div>
+				<h2 class="text_header_blue ">{{object.groupTitle}}</h2>
+					<!--  initial-->
+					<div id="initial_wrapper_group1" class="initial_wrapper hide">
+						<div class="initila_group_display">
+							Select the correct item and click here
+						</div>
+					</div>	
+						<!-- item 1-->
+						<div data-ng-repeat="item in data.listSelect" id="{{item.id}}_selected_g1" class="paring_group_item selected_group_item">
+							<div class="paring_group_inner_wrapper">
+								<div class="item_line item_line_color_{{item.colorIndex}}"></div>
+								<span>{{item.text}}</span><span class="delete_item">x</span>
+							</div>
+						</div>
+					<!-- item 2-->
+						<!--<div id="group_item_2_selected_g1" class="paring_group_item selected_group_item ">
+							<div class="paring_group_inner_wrapper">
+								<div class="item_line item_line_color_2"></div>
+								<span>Stadium</span><span class="delete_item">x</span>
+							</div>
+						</div>-->
+					<!-- item 3-->
+					<!--<div id="group_item_3_selected_g1" class="paring_group_item selected_group_item ">
+						<div class="paring_group_inner_wrapper">
+							<div class="item_line item_line_color_3"></div>
+							<span>Kotel HaMaarav? </span><span class="delete_item">x</span>
+						</div>
+					</div>-->
+					<!-- item 4-->
+					<!--<div id="group_item_4_selected_g1" class="paring_group_item selected_group_item">
+						<div class="paring_group_inner_wrapper">
+							<div class="item_line item_line_color_4"></div>
+							<span>Street </span><span class="delete_item">x</span>
+						</div>
+					</div>-->
+					<!-- item 5-->
+					<!--<div id="group_item_5_selected_g1" class="paring_group_item selected_group_item hide">
+						<div class="paring_group_inner_wrapper">
+							<div class="item_line item_line_color_5"></div>
+							<span>Car or Bus </span><span class="delete_item">x</span>
+						</div>
+					</div>-->
+					<!-- item 6-->
+					<!--<div id="group_item_6_selected_g1" class="paring_group_item selected_group_item hide">
+						<div class="paring_group_inner_wrapper">
+							<div class="item_line item_line_color_6"></div>
+							<span>Classroom </span><span class="delete_item">x</span>
+						</div>
+					</div>-->
+					<!-- item 7-->
+					<!--<div id="group_item_7_selected_g1" class="paring_group_item selected_group_item hide">
+						<div class="paring_group_inner_wrapper">
+							<div class="item_line item_line_color_7"></div>
+							<span>Field </span><span class="delete_item">x</span>
+						</div>
+					</div>-->
+					<!-- item 8-->
+					<!--<div id="group_item_8_selected_g1" class="paring_group_item selected_group_item hide">
+						<div class="paring_group_inner_wrapper">
+							<div class="item_line item_line_color_8"></div>
+							<span>Office</span><span class="delete_item">x</span>
+						</div>
+					</div>-->
+				</div><!--end of pg_container_blue -->
+		
+		</div>	<!-- end of paringroup_container -->
+		<!-- **************************  group 2 ****************************************** -->
+		<div id="paringroup_container_2" class="paringroup_container paringroup_container_resaults">
+			<div class="paring_group_groups_circ_blue"></div>
+			<div class="pg_container_blue">
+				<div class="paring_group_groups_backImg_blue"></div>
+				<h2 class="text_header_blue ">Not Appropriate</h2>
+					<!--  initial-->
+					<div id="initial_wrapper_group2" class="initial_wrapper hide">
+						<div class="initila_group_display">
+							Select the correct item and click here
+						</div>
+					</div>	
+						<!-- item 1-->
+						<div id="group_item_1_selected_g2" class="paring_group_item selected_group_item hide">
+							<div class="paring_group_inner_wrapper">
+								<div class="item_line item_line_color_1"></div>
+								<span>Home</span><span class="delete_item">x</span>
+							</div>
+						</div>
+					<!-- item 2-->
+						<div id="group_item_2_selected_g2" class="paring_group_item selected_group_item hide ">
+							<div class="paring_group_inner_wrapper">
+								<div class="item_line item_line_color_2"></div>
+								<span>Stadium</span><span class="delete_item">x</span>
+							</div>
+						</div>
+					<!-- item 3-->
+					<div id="group_item_3_selected_g2" class="paring_group_item selected_group_item hide ">
+						<div class="paring_group_inner_wrapper">
+							<div class="item_line item_line_color_3"></div>
+							<span>Kotel HaMaarav? </span><span class="delete_item">x</span>
+						</div>
+					</div>
+					<!-- item 4-->
+					<div id="group_item_4_selected_g2" class="paring_group_item selected_group_item hide ">
+						<div class="paring_group_inner_wrapper">
+							<div class="item_line item_line_color_4"></div>
+							<span>Street </span><span class="delete_item">x</span>
+						</div>
+					</div>
+					<!-- item 5-->
+					<div id="group_item_5_selected_g2" class="paring_group_item selected_group_item ">
+						<div class="paring_group_inner_wrapper">
+							<div class="item_line item_line_color_5"></div>
+							<span>Car or Bus </span><span class="delete_item">x</span>
+						</div>
+					</div>
+					<!-- item 6-->
+					<div id="group_item_6_selected_g2" class="paring_group_item selected_group_item ">
+						<div class="paring_group_inner_wrapper">
+							<div class="item_line item_line_color_6"></div>
+							<span>Classroom </span><span class="delete_item">x</span>
+						</div>
+					</div>
+					<!-- item 7-->
+					<div id="group_item_7_selected_g2" class="paring_group_item selected_group_item ">
+						<div class="paring_group_inner_wrapper">
+							<div class="item_line item_line_color_7"></div>
+							<span>Field </span><span class="delete_item">x</span>
+						</div>
+					</div>
+					<!-- item 8-->
+					<div id="group_item_8_selected_g2" class="paring_group_item selected_group_item ">
+						<div class="paring_group_inner_wrapper">
+							<div class="item_line item_line_color_8"></div>
+							<span>Office </span><span class="delete_item">x</span>
+						</div>
+					</div>
+				</div><!--end of pg_container_blue -->
+		
+		</div>	<!-- end of paringroup_container -->
+		<!-- **************************  END group 2 ****************************************** -->
+						
+	</div><!--end of g_groups_container -->	
+</div><!--end of global_groups_container -->

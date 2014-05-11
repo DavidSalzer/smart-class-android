@@ -1,0 +1,27 @@
+<div class="teacher_main_wrapper">
+    <header data-ui-view="header" class="gradient header_back"></header>
+    <nav data-ui-view="nav" class="back_blue gradient"></nav>
+    <div class="display_wrapper">
+        <aside data-ui-view="slidesList"></aside>
+        <section class="teacher_display teacher_play_width" style="overflow-y: scroll;">
+            <div data-ui-view="slide"></div>
+        </section>
+        <!--<div data-ui-view="mainResults"></div>-->
+         <section id="play_panel" class="play_panel_width play_panel_move" style="margin-right: -1200px;">
+
+            <div class="handel_wrapp">
+                <div class="panel_init"></div>
+                <div style="height:100%;position:absolute;top:0px;background-color:transparent;width:40px">
+                    <div class="panel_handel"><span>Results</span></div>
+                </div>
+            </div>
+            <div class="results_content_wrapp">
+                <div data-ui-view="studentsTable"></div>
+                <div data-ui-view="studentAnswer"></div>
+            </div>
+        </section> 
+    </div>
+
+</div>
+<footer data-ui-view="footer"></footer>
+<div data-ui-view="preview"></div>

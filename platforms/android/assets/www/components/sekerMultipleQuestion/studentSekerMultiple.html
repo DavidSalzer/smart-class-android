@@ -1,0 +1,16 @@
+<div class="student_content_wrapper">
+    <!-- ****************groups matching question********************************************* -->
+    <div class="seker_multiple" id="seker_multiple">
+        <h3 class="text_header_blue">{{data.text}} </h3>
+        <div class="seker_multiple_wrapper">
+         <div class="seker_multiple_item" data-ng-repeat="item in data.seker" data-ng-class="{'selected_seker_multiple_color':item.activeSeker}" data-ng-click="sekerSelect($index)">
+                {{item.text}}
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="send_blue_but">SEND</div>
+    </div>
+
+
+    <div>&nbsp;</div><!-- >pseoudo item for  bottom padding -->
+</div>

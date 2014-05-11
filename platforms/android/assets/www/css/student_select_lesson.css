@@ -1,0 +1,46 @@
+
+.lesson_select_table{
+  width:80%;
+  border-collapse:collapse;
+  margin:auto;
+  border:1px solid #d2d2d2;
+  margin-top:3%;
+ 
+}
+.lesson_select_table td{
+   border-bottom:1px solid #d2d2d2;
+   padding:1%;
+   text-align:left;
+}
+.lesson_select_table tr.blue_hover:hover{
+  background-color:#85d0e6;
+  cursor: pointer
+}
+
+
+.lesson_number{
+  width:5%;
+  font-size:1.8em;
+}
+.lesson_name{
+  width:80%;
+}
+.go_icon,.part_lesson{
+  width:5%;
+  background-image:url("../img/student_view_lesson.png");
+  background-repeat:no-repeat;
+  background-position: center center;
+}
+.part_lesson{
+  background-image:url("../img/student_view_lesson_part.png");
+}
+.go_icon{
+  background-image:url("../img/student_view_lesson.png");
+}
+.lesson_select_container{
+  width:80%;
+  margin:auto;
+  text-align:center;
+  margin-top:2%;
+}
+

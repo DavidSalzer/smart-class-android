@@ -1,0 +1,262 @@
+/* iPads (landscape) ----------- */
+ /*@media only screen and (max-width: 1024px){*/
+
+/* production */
+
+	@media only screen
+	and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : landscape){
+
+	.main_logo_login{
+		width:125px;
+		height:125px;
+	}
+
+	 .header_login{
+	 	height:12% 
+	 }
+	 .login_app_name{
+		font-size:1.8em;
+	}
+	.header_login_wrapper{
+		width:57%;
+	}
+	.login-wrapper{
+		width:56% 
+	}
+	.login_form_input{
+		height:10%;
+		width:85%;
+	}
+
+	.login_box{
+		height:55%;
+	}
+	.welcome_login{
+		top:12%;
+	}
+
+}
+
+/* iPads (portrait) ----------- */
+
+@media only screen and (max-width: 768px) and (max-height:1024px){
+   	
+
+   /* production*/
+  
+/*@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait){*/
+
+	.main_logo_login{
+		width:115px;
+		height:115px;
+	}
+
+	 .header_login{
+	 	height:8% 
+	 }
+	 .login_app_name{
+		font-size:1.8em;
+	}
+	.header_login_wrapper{
+		width:70%;
+	}
+	.login-wrapper{
+		width:60%;
+	}
+	.login_box{
+		height:40%!important
+	}
+
+}
+
+
+/* Android Tablet 800x1280 (portrait) ----------- */
+  /*@media only screen and (max-width: 800px) and (min-height:1280px){*/
+ /*production */
+ 
+   @media only screen
+    and (min-device-width : 800px)
+    and (max-device-width : 1280px)
+    and (orientation : portrait) {
+
+    .main_logo_login{
+		width:115px;
+		height:115px;
+	}	
+
+    .header_login{
+    	height:8%;
+    }	
+	 .header_login_wrapper{
+		width:75%
+	}
+
+	.login-wrapper{
+		width:70%;
+	}
+	.login_box{
+		height:30%;
+	}
+
+}
+
+
+/*android 1280x800 landscape */
+/*@media only screen and (max-width : 1280px) and (max-height: 800px) {*/
+/* production */
+   @media only screen
+    and (min-device-width : 800px)
+    and (max-device-width : 1280px)
+    and (orientation : portrait) {
+    .header_login_wrapper{
+    	width:50%;
+    }
+  }
+
+  /* android 1024x600 landscape */
+/*@media only screen and (max-width : 1024px) and (max-height: 600px) {*/
+ /*production */
+    @media only screen
+    and (min-device-width : 600px)
+    and (max-device-width : 1204px)
+    and (orientation : portrait) {
+
+	 .header_login_wrapper{
+		width:55%
+	}
+
+	.login-wrapper{
+		width:60%;
+	}
+	.login_box{
+		height:60%;
+	}
+
+}
+
+/* android 600x1024 portrait */
+/*@media only screen and (max-width : 600px) and (max-height: 1024px) {*/
+	/* production*/
+ @media only screen
+    and (min-device-width : 600px)
+    and (max-device-width : 1204px)
+    and (orientation : portrait) {
+	/*  table of lessons displayed to the student*/
+
+	 .header_login_wrapper{
+		width:90%
+	}
+
+	.login-wrapper{
+		width:90%;
+	}
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px){
+	.main_logo_login{
+		width:115px ;
+		height:115px;
+	}
+
+	 .header_login_wrapper{
+		width:45%
+	}
+	.login-wrapper{
+		width:45%;
+	}
+	.login_form_input{
+		height:10%;
+		width:75%;
+	}
+	.login_box {
+		height:55%;
+	}
+	.welcome_login {
+		top:12%;
+	}
+	.header_login{
+	height:12%;  
+	}
+
+}
+
+/* 1280X600 LEPTOP*/
+@media only screen 
+and (min-width : 1280px) and (max-height: 600px) {
+	.main_logo_login{
+		width:115px ;
+		height:115px;
+	}
+
+	 .header_login{
+	 	height:15% 
+	 }
+
+	 .header_login_wrapper{
+		width:45%
+	}
+	.login-wrapper{
+		width:45%;
+	}
+	.login_box{
+		width:100%;
+		height:60%;
+	}
+		.login_form_input{
+		height:10%;
+		width:80%;
+	}
+
+	.welcome_login{
+		
+	 top:10%;
+	 left:5%;
+	
+	}
+	.login_box {
+		height:60%;
+	}
+
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+	.main_logo_login{
+		width:142px;
+		height:142px;
+	}
+	 .header_login_wrapper{
+		width:33%
+	}
+	.login-wrapper{
+		width:33%;
+	}
+		.login_box{
+		width:100%;
+		height:40%;
+
+	}
+
+
+}
+/* retina display ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+ 
+
+}

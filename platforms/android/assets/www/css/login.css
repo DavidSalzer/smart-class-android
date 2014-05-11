@@ -1,0 +1,184 @@
+.teacher_main_wrapper{
+	width:100%;
+	height:100%;
+	overflow-x:hidden;
+	
+}
+.header_back{
+  background-image: -moz-linear-gradient( 90deg, rgb(216,213,213) 0%, rgb(255,255,255) 54%, rgb(250,250,250) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(216,213,213) 0%, rgb(255,255,255) 54%, rgb(250,250,250) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(216,213,213) 0%, rgb(255,255,255) 54%, rgb(250,250,250) 100%);
+}
+.header_login{
+
+border-top:3px solid #0082a5;
+width:100%;
+height:10%;
+position:relative;
+  
+}
+.app_name_blue{
+color:#017a96;
+}
+
+.login_app_name{
+font-family: 'Open Sans Condensed', sans-serif;	
+height:100%;
+vertical-align:middle;
+text-align:center;
+display:table-cell;
+font-size:2em;
+
+}
+
+.main_logo_login{
+width:95px;
+height:95px;
+position:absolute;
+z-index:100;
+top:0px;
+left:0.5%;
+}
+.header_login_text{
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+.header_login_wrapper{
+	position:relative;
+	width:35%;
+	margin:auto;
+	display:table;
+	vertical-align:middle;
+	height:100%;
+
+}
+.table_row{
+	width:100%;
+	vertical-align:middle;
+	height:100%;
+	display:table-row;
+}
+
+.login-wrapper{
+	position:relative;
+	margin:auto;
+	width:35%;
+	height:90%;
+}
+.login_box {
+ position:absolute;	
+ top:20%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb( 219, 217, 217 );
+  border-radius: 30px;
+  background-color: rgb( 253, 249, 253 );
+  box-shadow: 0px 0px 8px 0px rgb( 161, 161, 161 );
+ width:100%;
+ height:45%;
+}
+.welcome_login{
+position:absolute;	
+ top:14%;
+ left:5%;
+ color:#555555;
+ font-size:0.9em;
+}
+/* inner fields */
+.logo_school{
+	width:33%;
+	text-align:center;
+	vertical-align:center;
+	display:table;
+}
+
+
+.login_form{
+	width:60%;
+	margin-top:10%;
+}
+.logo_school,.login_form{
+	float:left;
+}
+.login_form label{
+
+}
+.login_form_input{
+height:10%;
+width:70%;
+}
+/*  logon buts*/
+.view_lessons,.play_lesson,.login_but{
+	display:block;
+	cursor:pointer;
+	line-height:3em;
+	font-size:0.8em;
+	float:left;
+	height:39px;
+	margin:2% 5% 0 0;
+}
+.play_lesson,.login_but{
+	background-image: url("../img/play_lesson.png");
+	background-repeat: no-repeat;
+	width:145px;
+	color:#ffffff;
+}
+.login_but{
+	text-align:center;
+	background-image: url("../img/login_but.png");
+	background-repeat: no-repeat;
+	width:127px;
+	color:#ffffff;
+	font-weight:bold;
+	margin-left:15%;
+	line-height:-0.5em;
+}
+
+.view_lessons{
+	background-image: url("../img/view_lessons.png");
+	background-repeat: no-repeat;
+	width:127px;
+	color:#615f5f;	
+		text-align:center;
+}
+.play_lesson span{
+display:inline-block;
+margin-left:25px;
+}
+.view_lessons:hover,.play_lesson:hover,.login_but:hover,.hover_effect{
+	background-position:bottom right;
+
+}
+.table_cell{
+  display:table-cell;
+  vertical-align:middle;
+  height:100%;
+
+
+}
+.hr{
+	margin-top:6%;
+	margin-right:5%;
+	height:80%;
+	
+	width:2px;
+	float:left;
+	
+	background-color:#cac8c8;;
+}
+.pull-left{
+	float:left;
+}
+.forgot{
+position:relative;
+top:10px;
+left:5px;
+cursor:pointer;
+font-size: 0.9em
+}
+.forgot:hover{
+	text-decoration:underline;
+}
+
+

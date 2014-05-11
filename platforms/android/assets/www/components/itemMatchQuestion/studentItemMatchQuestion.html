@@ -1,0 +1,29 @@
+<!-- ****************groups matching question********************************************* -->
+<div class="item_match">
+    <h3 class="text_header_blue">{{data.text}}</h3>
+    <ul id="selected_items_match" class="selected_items_match">
+        <li ng-repeat="couple in couples" class="merged_items_display link_color_0 " data-ng-class="{'link_pink':$index==0,'link_pink link_color_1 link_orange':$index==1,'link_pink link_color_1 link_orange link_color_2':$index==2,'link_pink link_color_1 link_orange link_color_2 link_color_3':$index==3}">
+            <span class="merged_items_displayX" ng-click="removeCouple($index)">X</span>
+            <div>{{data.leftText[couple.left].text}}</div>
+            <img src="../img/link_icon.png" ng-click="removeCouple($index)">
+            <div>{{data.rightText[couple.right].text}}</div>
+        </li>
+    </ul>
+    <ul id="match_items_row_left" class="match_items_row float-left">
+        <li data-ng-repeat="item in data.leftText" data-ng-class="{'selected_matche_item_blue':item.type}" class="display_blue" data-ng-click="macthSelect('left',$index)" data-ng-hide="item.hide">
+                            {{item.text}}
+        </li>
+    </ul>
+    <ul id="match_items_row_right" class="match_items_row float-right">
+        <li data-ng-repeat="item in data.rightText" data-ng-class="{'selected_matche_item_blue':item.type}" class="display_blue" data-ng-click="macthSelect('right',$index)" data-ng-hide="item.hide">
+                            {{item.text}}
+        </li>
+    </ul>
+    <div class="clearfix"></div>
+
+
+
+    <div class="send_blue_but" data-ng-click="send()">Send</div>
+</div>
+<div>&nbsp;</div><!-- >pseoudo item for  bottom padding -->
+				

@@ -1,0 +1,19 @@
+<div class="student_content_wrapper">
+    <!-- like_dislike  -->
+    <div class="like_dislike">
+        <h3 class="text_header_blue" style="text-align:center">{{data.text}}</h3>
+        <div class="like_dislike_wrapper">
+            <div class="but_container" ng-class="{'but_container_selected_like':data.press==='like'}">
+                <div class="like_but"  ng-click="likePress('like')"></div>
+                <span class="like_text">Like</span>
+            </div>
+            <div class="but_container" ng-class="{'but_container_selected_dislike':data.press==='dislike'}">
+                <div class="dislike_but" ng-click="likePress('dislike')"></div>
+                <span class="dislike_text">Dislike</span>
+            </div>
+        </div>
+        <div class="send_blue_but" ng-click="send()">SEND</div>
+    </div>
+
+    <div>&nbsp;</div><!-- >pseoudo item for  bottom padding -->
+</div>

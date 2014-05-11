@@ -1,0 +1,36 @@
+<style>
+    .class_name_sref{
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+    }
+</style>
+<header data-ui-view="header" class="gradient header_back"></header>
+<nav data-ui-view="nav" class="back_blue gradient" ></nav>
+<h4 class="select_class_welcome">Welcome! Please select the wanted Class</h4>	
+
+<section class="class_select_container">
+
+	<div style="display:table-row">
+		
+		<div data-ng-repeat="grade in data.grades"  class="class_wrapper">
+			<div data-ng-class="{'grade_{{$index+9}}':true,'class_level_1':true }"  data-ng-click="open = !open" data-ng-init="open= false">
+				<div>GRADE</div> 
+				<span class="grade_num">{{grade.name}}</span>
+			</div>
+			<div data-ng-class="{'g{{$index+9}}':true,'class_level_2':true }" data-ng-show="open">
+				<ul>
+				<li data-ng-repeat="class in grade.classes" data-ng-click="selectClass(grade.name,$index) ">Class {{class.name}}</li>	
+					
+				</ul>
+			</div>
+		</div><!-- end of class wrapper -->
+		
+	</div>
+
+	<div class="clearfix"></div>
+	
+</section><!-- end of class_select_container -->
+
+
+

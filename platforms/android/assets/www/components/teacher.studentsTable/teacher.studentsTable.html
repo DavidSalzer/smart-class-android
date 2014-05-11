@@ -1,0 +1,201 @@
+
+<section class="students_status">
+    <div style="position:relative" class="student_status_wrapp">
+        <table class="status_table">
+            <tr data-ng-repeat="tr in data.studentData">
+                <td data-ng-repeat="td in tr.Name">
+                    <div class="student_status_icon ok_status_icon">
+                        <img src="../img/{{tr.Status[$index]}}.png">
+                    </div>
+                    <div class="student_name">{{td}}</div>
+                </td>
+                <!--<td>
+                    <div class="student_status_icon ok_status_icon">
+                        <img src="../img/ok_status.png">
+                    </div>
+                    <div class="student_name">Cynthia Mejia</div>
+                </td>
+                <td>
+                    <div class="student_status_icon ok_status_icon">
+                        <img src="../img/part_ok_status.png">
+                    </div>
+                    <div class="student_name">Lorna Hess</div>
+                </td>
+                <td>
+                    <div class="student_status_icon not_ok_status_icon">
+                        <img src="../img/not_ok_status.png">
+                    </div>
+                    <div class="student_name">Rubin Faulkner</div>
+                </td>
+                <td>
+                    <div class="student_status_icon not_ok_status_icon">
+                        <img src="../img/not_ok_status.png">
+                    </div>
+                    <div class="student_name">Dion Bentley</div>
+                </td>-->
+            </tr>
+           <!-- <tr>
+                <td>
+                    <div class="student_status_icon ok_status_icon">
+                        <img src="../img/ok_status.png">
+                    </div>
+                    <div class="student_name">Dion Bentley</div>
+                </td>
+                <td>
+                    <div class="student_status_icon ok_status_icon">
+                        <img src="../img/ok_status.png">
+                    </div>
+                    <div class="student_name">Bryon Nash Allen</div>
+                </td>
+                <td>
+                    <div class="student_status_icon ok_status_icon">
+                        <img src="../img/ok_status.png">
+                    </div>
+                    <div class="student_name">Opal Waller</div>
+                </td>
+                <td>
+                    <div class="student_status_icon">
+                        <img src="../img/part_ok_status.png">
+                    </div>
+                    <div class="student_name">Willie Silas Burnett</div>
+                </td>
+                <td>
+                    <div class="student_status_icon not_ok_status_icon">
+                        <img src="../img/not_ok_status.png">
+                    </div>
+                    <div class="student_name">Dion Bentley</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="student_status_icon ok_status_icon">
+                        <img src="../img/ok_status.png">
+                    </div>
+                    <div class="student_name">Micheal Gerry Jame</div>
+                </td>
+                <td>
+                    <div class="student_status_icon ok_status_icon">
+                        <img src="../img/ok_status.png">
+                    </div>
+                    <div class="student_name">Bryon Nash Allen</div>
+                </td>
+                <td>
+                    <div class="student_status_icon ok_status_icon">
+                        <img src="../img/ok_status.png">
+                    </div>
+                    <div class="student_name">Jorge Mcclure</div>
+                </td>
+                <td>
+                    <div class="student_status_icon">
+                        <img src="../img/part_ok_status.png">
+                    </div>
+                    <div class="student_name">Willie Silas Burnett</div>
+                </td>
+                <td>
+                    <div class="student_status_icon">
+                        <img src="../img/part_ok_status.png">
+                    </div>
+                    <div class="student_name">Dion Bentley</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="student_status_icon ok_status_icon">
+                        <img src="../img/ok_status.png">
+                    </div>
+                    <div class="student_name">Willie Silas Burnett</div>
+                </td>
+                <td>
+                    <div class="student_status_icon not_ok_status_icon">
+                        <img src="../img/not_ok_status.png">
+                    </div>
+                    <div class="student_name">Bryon Nash Allen</div>
+                </td>
+                <td>
+                    <div class="student_status_icon ok_status_icon">
+                        <img src="../img/ok_status.png">
+                    </div>
+                    <div class="student_name">Opal Waller</div>
+                </td>
+                <td>
+                    <div class="student_status_icon ok_status_icon">
+                        <img src="../img/ok_status.png">
+                    </div>
+                    <div class="student_name">Willie Silas Burnett</div>
+                </td>
+                <td>
+                    <div class="student_status_icon ok_status_icon">
+                        <img src="../img/ok_status.png">
+                    </div>
+                    <div class="student_name">Jorge Mcclure</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="student_status_icon ok_status_icon">
+                        <img src="../img/ok_status.png">
+                    </div>
+                    <div class="student_name">Lorene Sullivan</div>
+                </td>
+                <td>
+                    <div class="student_status_icon not_ok_status_icon">
+                        <img src="../img/not_ok_status.png">
+                    </div>
+                    <div class="student_name">Bryon Nash Allen</div>
+                </td>
+                <td>
+                    <div class="student_status_icon not_ok_status_icon">
+                        <img src="../img/not_ok_status.png">
+                    </div>
+                    <div class="student_name">Jorge Mcclure</div>
+                </td>
+                <td>
+                    <div class="student_status_icon">
+                        <img src="../img/ok_status.png">
+                    </div>
+                    <div class="student_name">Opal Waller</div>
+                </td>
+                <td>
+                    <div class="student_status_icon">
+                        <img src="../img/ok_status.png">
+                    </div>
+                    <div class="student_name">Dion Bentley</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="student_status_icon ok_status_icon">
+                        <img src="../img/ok_status.png">
+                    </div>
+                    <div class="student_name">Rubin Faulkner</div>
+                </td>
+                <td>
+                    <div class="student_status_icon ok_status_icon">
+                        <img src="../img/ok_status.png">
+                    </div>
+                    <div class="student_name">Bryon Nash Allen</div>
+                </td>
+                <td>
+                    <div class="student_status_icon">
+                        <img src="../img/ok_status.png">
+                    </div>
+                    <div class="student_name">Opal Waller</div>
+                </td>
+                <td>
+                    <div class="student_status_icon ok_status_icon">
+                        <img src="../img/ok_status.png">
+                    </div>
+                    <div class="student_name">Willie Silas Burnett</div>
+                </td>
+                <td>
+                    <div class="student_status_icon">
+                        <img src="../img/not_ok_status.png">
+                    </div>
+                    <div class="student_name">Dion Bentley</div>
+                </td>
+            </tr>-->
+        </table>
+        <div class="students_status_handel"><div></div></div>
+    </div>
+</section>
+						

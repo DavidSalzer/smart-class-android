@@ -1,0 +1,69 @@
+<!-- ****************groups matching question********************************************* -->
+<div class="global_groups_container">
+    <p class="instruction text_header_blue">{{data.text}} </p>
+    <div class="paring_group_items" >
+        <div data-ng-repeat="item in data.listSelect" id="{{item.id}}" class="paring_group_item_wrapper" data-ng-click="selectItem($index)">
+            <div class="paring_group_item border_group_item_{{item.colorIndex}} {{item.activeClass}}">
+                <div class="paring_group_inner_wrapper">
+                    <div class="item_line item_line_color_{{item.colorIndex}}"></div>
+                    <p>{{item.text}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========================================================================== -->
+    <!-- *************************** GROUPS SECTION******************************** -->
+    <!-- ========================================================================== -->
+    <div class="g_groups_container">
+
+        <!-- ***************************** group 1 ************************************ -->
+        <div id="paringroup_container_1" class="paringroup_container">
+            <div class="paring_group_groups_circ_blue"></div>
+            <div class="pg_container_blue" ng-click="drop('app')">
+                <div class="paring_group_groups_backImg_blue"></div>
+                <h2 class="text_header_blue ">Appropriate</h2>
+                <!--  initial-->
+                <div id="initial_wrapper_group1" class="initial_wrapper" ng-hide='app.length > 0'>
+                    <div class="initila_group_display" >
+												Select the correct item and click here
+                    </div>
+                </div>
+                <div ng-repeat="drop in app">
+                    <div id="group_item_{{drop.colorIndex}}_selected_g1" class="paring_group_item selected_group_item">
+                        <div class="paring_group_inner_wrapper">
+                        <div class="item_line item_line_color_{{drop.colorIndex}}"></div>
+                        <sapn>{{drop.text}}</span><span class="delete_item" ng-click="removeDrop('app',$index)">x</span>
+                    </div>
+                </div>
+
+                </div>
+               
+            </div><!--end of pg_container_blue -->
+        </div>	<!-- end of paringroup_container -->
+        <!-- **************************  group 2 ****************************************** -->
+        <div id="paringroup_container_2" class="paringroup_container">
+            <div class="paring_group_groups_circ_blue"></div>
+            <div class="pg_container_blue" ng-click="drop('noneApp')">
+                <div class="paring_group_groups_backImg_blue"></div>
+                <h2 class="text_header_blue ">Not Appropriate</h2>
+                <!--  initial-->
+                <div id="initial_wrapper_group2" class="initial_wrapper"  ng-hide='noneApp.length > 0'>
+                    <div class="initila_group_display">
+												Select the correct item and click here
+                    </div>
+                </div>
+                 <div ng-repeat="noneDrop in noneApp">
+                    <div id="group_item_{{noneDrop.colorIndex}}_selected_g2" class="paring_group_item selected_group_item">
+                        <div class="paring_group_inner_wrapper">
+                        <div class="item_line item_line_color_{{noneDrop.colorIndex}}"></div>
+                        <span>{{noneDrop.text}}</span><span class="delete_item" ng-click="removeDrop('noneapp',$index)">x</span>
+                        </div>
+                    </div>
+                 </div>
+               
+            </div><!--end of pg_container_blue -->
+        </div>	<!-- end of paringroup_container -->
+        <!-- **************************  END group 2 ****************************************** -->
+        <div class="send_blue_but" data-ng-click="sendData();">Send</div>
+    </div><!--end of g_groups_container -->
+</div><!--end of global_groups_container -->	

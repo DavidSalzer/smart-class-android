@@ -1,0 +1,17 @@
+<div class="resaults_panel_wrapper">
+	<div class="student_buble">
+		<div class="student_arrow_box">
+			<p class="student_buble_name">{{data.student}}</p>
+		</div>
+	</div>
+
+	<div data-ng-switch on="{{data.answers.length}}" class="panel_student_question">
+		
+		<div data-ng-switch-when="0" class="no_answer">no answer yet</div>
+		
+		<div data-ng-switch-default>
+			<div data-ng-repeat="item in data.answers" data-ui-view="{{item.answerType}}"></div>
+		</div> 
+
+	</div><!--end of panel_student_question -->
+</div>

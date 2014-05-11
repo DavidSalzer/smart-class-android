@@ -1,0 +1,173 @@
+<ul id="teacher_navigation">
+				<li><a data-ng-click="goSettings()">Settings</a></li>
+				<li><a data-ng-click="goLessons()">Lessons</a></li>
+				<li><a data-ng-click="goChangeClass()">Change Class</a></li>
+			</ul>
+			<div class="teacher_play_actions">
+				<div class="teacher_play_actions_item" id="dialog-link">
+					<div class="stop_lesson_icon stop_lesson_active">
+						<div class="play_lesson_x"></div>
+						<div class="play_lesson_triangle hide"></div>
+					</div>
+					<span class="stop_lesson_text">Stop Lesson</span>
+				</div>
+				<!-- <div class="teacher_play_actions_item" id="connected_status_link">
+					<div class="connected_lesson_icon">28</div>
+					<span>Connected</span>
+					<section class="connected_panel">
+						<table class="connection_table">
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Bill Yang</td>
+								<td class="connected_time">12:01</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Jhonatan Aharonso</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Raphael Rosenberg</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_red"></div></td>
+								<td class="connected_name">Adam Dvorianski</td>
+								<td class="connected_time"></td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Ben Aharon</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Bill Yang</td>
+								<td class="connected_time">12:01</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Jhonatan Aharonso</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Raphael Rosenberg</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Adam Dvorianski</td>
+								<td class="connected_time">12:06</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_red"></div></td>
+								<td class="connected_name">Ben Aharon</td>
+								<td class="connected_time"></td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Bill Yang</td>
+								<td class="connected_time">12:01</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Jhonatan Aharonso</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Raphael Rosenberg</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Adam Dvorianski</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Ben Aharon</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Bill Yang</td>
+								<td class="connected_time">12:01</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Jhonatan Aharonso</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Raphael Rosenberg</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Adam Dvorianski</td>
+								<td class="connected_time">12:06</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Ben Aharon</td>
+								<td class="connected_time">12:09</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Bill Yang</td>
+								<td class="connected_time">12:01</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Jhonatan Aharonso</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Raphael Rosenberg</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Adam Dvorianski</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Ben Aharon</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Bill Yang</td>
+								<td class="connected_time">12:01</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Jhonatan Aharonso</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Raphael Rosenberg</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Adam Dvorianski</td>
+								<td class="connected_time">12:06</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_red"></div></td>
+								<td class="connected_name">Ben Aharon</td>
+								<td class="connected_time">12:05</td>
+							</tr>
+						</table>
+					</section><!-- end of connected_panel -->
+				<!-- </div><!-- end of connected_status_link -->
+			</div><!--end of teacher_play_actions --> 
+			<div class="clearfix"></div>

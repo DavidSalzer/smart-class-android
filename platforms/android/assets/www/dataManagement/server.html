@@ -1,0 +1,42 @@
+﻿<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="server-link.js"></script>
+<script src="socket.io.js"></script>
+
+<script src="fileUpload.js"></script>
+var sl= new Server_link(); <br/>
+sl.send_Instantly_req("login", {userName:"a",pass:"a"},function(res,type,req){})<br/>
+sl.add_request("login", {userName:"a",pass:"a"},function(res,type,req){})<br/>
+sl.sendAllRequest()<br/>
+
+<h3>user</h3>
+sl.send_Instantly_req ("login", {userName:"aa",pass:"bb"});<br/>
+sl.send_Instantly_req ("logout", {});<br/>
+sl.send_Instantly_req ("getUser", {});<br/>
+sl.send_Instantly_req ("addUser", {userName:"aa",pass:"bb",type:"editor"}); //type=admin/editor<br/>
+sl.send_Instantly_req ("updateUserPass", {oldPass:"aa",newPass:"bb"});<br/>
+sl.send_Instantly_req ("updateOtherUserPass", {uid:12,newPass:"bb"});<br/>
+sl.send_Instantly_req ("deleteUser", {uid:12});<br/>
+
+<h3>CambiumSync</h3>
+var socket = io.connect('http://54.205.138.41:3000');
+function sendKey(){
+	sl.send_Instantly_req ("cambiumSync-getKey", {} ,function(data){
+		key=data.key;
+		socket.on('error', function (data) {
+			if (data.code==1)
+				sendKey();
+		});
+		socket.emit('sendKey', { key: key });
+	});
+}
+sendKey();
+socket.on('switchSlide', function (data) {
+	console.log(data);
+});
+
+<h3>Image</h3>
+<form action="fileUpload.php?type=uplodeImage" method="post" enctype="multipart/form-data">
+<label for="file">Filename:</label>
+<input type="file" name="file" id="file"><br>
+<input type="submit" name="submit" value="Submit">
+</form>

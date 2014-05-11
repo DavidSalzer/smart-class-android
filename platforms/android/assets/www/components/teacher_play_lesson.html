@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" />
+
+	<title>Smart class - Tefila</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/questions.css" />
+	<link rel="stylesheet" type="text/css" href="../css/teacher_prepare.css" />
+	<link rel="stylesheet" type="text/css" href="../css/teacher_container.css" />
+	<link rel="stylesheet" type="text/css" href="../css/media_teacher.css" />
+<link rel="stylesheet" type="text/css" href="../js/jquery-ui-1.10.4_custom/css/smoothness/jquery-ui-1.10.4.custom.min.css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+	
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <style type="text/css">
+	  .ui-slider-horizontal .ui-state-default {background: white url(../img/slider_handle.png) no-repeat scroll 50% 50%;}
+	  .ui-slider .ui-slider-handle{width:1.9em;height:2.7em;border:1px solid transparent;background-color:transparent;}
+	  #slider .ui-slider-range { background: #5aadd2; }
+	   .ui-slider-handle{-ms-touch-action: none;touch-action: none;}
+	  </style>
+	  <script src="../js/application.js"></script>
+	  <script src="../js/jquery-ui-1.10.4_custom/js/jquery-ui-1.10.4.custom.min.js"></script>
+
+  <!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="../css/all-ie-only.css" />
+<![endif]-->
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+
+</head>
+<body>
+	<div class="teacher_main_wrapper">
+		<header class="gradient header_back">
+			<div class="top_ornament"></div>
+			<div>
+				<img class="main_logo" src="../img/main_logo.png">
+			</div> 
+			<div class="teacher_logout">Logout</div>
+			<div class="header_text">
+				<h2 class="app_name app_name_blue">Smart class - Tefila </h2>
+				<h4 class="scholl_name scholl_name_blue">Democracy Prep Charter High School  - Class: 8A</h4>
+			</div>	
+			
+		</header>
+		<nav class="back_blue gradient" >
+			<ul id="teacher_navigation">
+				<li><a href="#">Settings</a></li>
+				<li><a href="#">Lessons</a></li>
+				<li><a href="#">Change Class</a></li>
+				<!--<li><a href="#">Change Subject</a></li>-->
+			</ul>
+			<div class="teacher_play_actions">
+				<div class="teacher_play_actions_item" id="dialog-link">
+					<div class="stop_lesson_icon stop_lesson_active">
+						<div class="play_lesson_x"></div>
+						<div class="play_lesson_triangle hide"></div>
+					</div>
+					<span class="stop_lesson_text">Stop Lesson</span>
+				</div>
+				<div class="teacher_play_actions_item" id="connected_status_link">
+					<div class="connected_lesson_icon">28</div>
+					<span>Connected</span>
+					<section class="connected_panel">
+						<table class="connection_table">
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Bill Yang</td>
+								<td class="connected_time">12:01</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Jhonatan Aharonso</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Raphael Rosenberg</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_red"></div></td>
+								<td class="connected_name">Adam Dvorianski</td>
+								<td class="connected_time"></td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Ben Aharon</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Bill Yang</td>
+								<td class="connected_time">12:01</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Jhonatan Aharonso</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Raphael Rosenberg</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Adam Dvorianski</td>
+								<td class="connected_time">12:06</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_red"></div></td>
+								<td class="connected_name">Ben Aharon</td>
+								<td class="connected_time"></td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Bill Yang</td>
+								<td class="connected_time">12:01</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Jhonatan Aharonso</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Raphael Rosenberg</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Adam Dvorianski</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Ben Aharon</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Bill Yang</td>
+								<td class="connected_time">12:01</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Jhonatan Aharonso</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Raphael Rosenberg</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Adam Dvorianski</td>
+								<td class="connected_time">12:06</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Ben Aharon</td>
+								<td class="connected_time">12:09</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Bill Yang</td>
+								<td class="connected_time">12:01</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Jhonatan Aharonso</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Raphael Rosenberg</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Adam Dvorianski</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Ben Aharon</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Bill Yang</td>
+								<td class="connected_time">12:01</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Jhonatan Aharonso</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Raphael Rosenberg</td>
+								<td class="connected_time">12:03</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_green"></div></td>
+								<td class="connected_name">Adam Dvorianski</td>
+								<td class="connected_time">12:06</td>
+							</tr>
+							<tr>
+								<td class="connection_status"><div class="connected_status_red"></div></td>
+								<td class="connected_name">Ben Aharon</td>
+								<td class="connected_time">12:05</td>
+							</tr>
+						</table>
+					</section><!-- end of connected_panel -->
+				</div><!-- end of connected_status_link -->
+			</div><!--end of teacher_play_actions -->
+			<div class="clearfix"></div>
+		</nav>
+		<div class="display_wrapper">
+			<aside>
+				<div class="slides_wrapper">
+					<div class="slide_item" id="play_teacher_new_questions">
+						<div class="add_new_slide_icon">+</div>
+						<div class="slide_text">Add New Slide</div>
+					</div>
+					<div class="slide_item done_slide">
+						<div class="slide_number">01</div>
+						<div class="slide_text">The experience of the Tefillah</div>
+					</div>
+					<!-- 2 slide -->
+					<div class="slide_item done_slide">
+						<div class="slide_number">02</div>
+						<div class="slide_text"> The meeting</div>
+					</div>
+					<!-- 3 slide -->
+					<div class="slide_item done_slide">
+						<div class="slide_number">03</div>
+						<div class="slide_text"> The particularity of Mincha</div>
+						<div class="selected_pas"></div>
+					</div>
+					<!-- 4 slide -->
+					<div class="slide_item selected_blue">
+						<div class="slide_number">04</div>
+						<div class="slide_text">  Inner space</div>
+						<div class="selected_pas"></div>
+					</div>
+					<!-- 5 slide -->
+					<div class="slide_item">
+						<div class="slide_number">05</div>
+						<div class="slide_text"> How did you feel during Tefillah</div>
+						<div class="selected_pas"></div>
+					</div>
+					<!-- 6 slide -->
+					<div class="slide_item">
+						<div class="slide_number">06</div>
+						<div class="slide_text"> The experience of the Tefillah</div>
+						<div class="selected_pas"></div>
+					</div>
+					<!-- 7 slide -->
+					<div class="slide_item">
+						<div class="slide_number">07</div>
+						<div class="slide_text">  Inner space</div>
+						<div class="selected_pas"></div>
+					</div>
+					<!-- 8 slide -->
+					<div class="slide_item">
+						<div class="slide_number">08</div>
+						<div class="slide_text"> How did you feel during Tefillah</div>
+						<div class="selected_pas"></div>
+					</div>
+					<!-- 9 slide -->
+					<div class="slide_item">
+						<div class="slide_number">09</div>
+						<div class="slide_text"> The experience of the Tefillah</div>
+						<div class="selected_pas"></div>
+					</div>
+					<!-- 10 slide -->
+					<div class="slide_item">
+						<div class="slide_number">10</div>
+						<div class="slide_text">  Inner space</div>
+						<div class="selected_pas"></div>
+					</div>
+					<!-- 11 slide -->
+					<div class="slide_item">
+						<div class="slide_number">11</div>
+						<div class="slide_text"> How did you feel during Tefillah</div>
+						<div class="selected_pas"></div>
+					</div>
+					<!-- 12 slide -->
+					<div class="slide_item">
+						<div class="slide_number">12</div>
+						<div class="slide_text"> The experience of the Tefillah</div>
+						<div class="selected_pas"></div>
+					</div>
+					<!-- 13 slide -->
+					<div class="slide_item">
+						<div class="slide_number">13</div>
+						<div class="slide_text"> The experience of the Tefillah</div>
+						<div class="selected_pas"></div>
+					</div>
+					<!-- 14 slide -->
+					<div class="slide_item">
+						<div class="slide_number">14</div>
+						<div class="slide_text">  Inner space</div>
+						<div class="selected_pas"></div>
+					</div>
+					<!-- 15 slide -->
+					<div class="slide_item">
+						<div class="slide_number">15</div>
+						<div class="slide_text"> How did you feel during Tefillah</div>
+						<div class="selected_pas"></div>
+					</div>
+					<!-- 16slide -->
+					<div class="slide_item">
+						<div class="slide_number">16</div>
+						<div class="slide_text"> The experience of the Tefillah</div>
+						<div class="selected_pas"></div>
+					</div>
+				</div><!--end of slides wrapper-->
+			</aside>
+			<section class="teacher_display teacher_play_width">
+				<div class="teacher_display_wrapper">
+					<div class="note">
+						<h3 class="text_header_blue">Ramchal, Mesilat Yesharim Ch. 19</h3>
+			    		<p>
+			    			he person is really against Hashem and converses with him, even though the human eye can not grasp it and therefore it is difficult to aptherepreciate what the heart and the senses do not help. However, having a clear mind, with some reasoning, paying attention, may lay on your heart the truth that is really dialogue with Hashem, and he begs and he asks while he hears and attends his words, in the same way a person speaks to his neighbor and his neighbor listens	
+			    		</p>
+					</div><!-- end of note -->
+						<!-- selection question -->
+					<div class="selection">
+
+						<div id="selection_name" class="selection_wrapper">
+							<div class="s_table_cell">
+								<h3 class="text_header_blue">According to Judaism, ideally percebir Tefillah as:</h3>
+								<!-- -question1 blue-->
+								<section class="selection_item_blue selection_q_item">
+									<div class="item_circ item_circ_blue"><span class="item_circle_text">1</span></div>
+									<div class="selection_text">A religious obligation</div>
+								</section>
+								<!-- question2 green -->
+								<section class="selection_item_green selection_q_item">
+									<div class="item_circ  item_circ_green"><span class="item_circle_text">1</span></div>
+									<div class="selection_text">An encounter with Hashemn</div>
+								</section>
+								<!-- question3 orange -->
+								<section class="selection_item_orange selection_q_item">
+									<div class="item_circ  item_circ_orange"><span class="item_circle_text">1</span></div>
+									<div class="selection_text">An encounter with Hashemn</div>
+								</section>
+								
+							</div><!-- end of s_table_cell -->
+						</div><!--end of selection wrapper -->
+
+					</div><!-- end of selection -->
+				</div><!-- end of teacher display wrapper -->	
+			</section>
+			<section id="play_panel" class="play_panel_width">
+				
+				<div class="handel_wrapp">
+						<div class="panel_init"></div>
+						<div style="height:100%;position:absolute;top:0px;background-color:transparent;width:40px">
+							<div class="panel_handel"><span>Results</span></div>
+						</div>
+				</div>	
+					
+					<div class="results_content_wrapp">
+				
+						<section class="students_status">
+							<div style="positiuon:relative" class="student_status_wrapp">
+								<table class="status_table">
+									<tr>
+										<td>
+											<div class="student_status_icon ok_status_icon">
+												<img src="../img/ok_status.png">
+											</div>
+											<div class="student_name">Lorene Sullivan</div>
+										</td>
+										<td>
+											<div class="student_status_icon ok_status_icon">
+												<img src="../img/ok_status.png">
+											</div>
+											<div class="student_name">Cynthia Mejia</div>
+										</td>
+										<td>
+											<div class="student_status_icon ok_status_icon">
+												<img src="../img/part_ok_status.png">
+											</div>
+											<div class="student_name">Lorna Hess</div>
+										</td>
+										<td>
+											<div class="student_status_icon not_ok_status_icon">
+												<img src="../img/not_ok_status.png">
+											</div>
+											<div class="student_name">Rubin Faulkner</div>
+										</td>
+										<td>
+											<div class="student_status_icon not_ok_status_icon">
+												<img src="../img/not_ok_status.png">
+											</div>
+											<div class="student_name">Dion Bentley</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="student_status_icon ok_status_icon">
+												<img src="../img/ok_status.png">
+											</div>
+											<div class="student_name">Dion Bentley</div>
+										</td>
+										<td>
+											<div class="student_status_icon ok_status_icon">
+												<img src="../img/ok_status.png">
+											</div>
+											<div class="student_name">Bryon Nash Allen</div>
+										</td>
+										<td>
+											<div class="student_status_icon ok_status_icon">
+												<img src="../img/ok_status.png">
+											</div>
+											<div class="student_name">Opal Waller</div>
+										</td>
+										<td>
+											<div class="student_status_icon">
+												<img src="../img/part_ok_status.png">
+											</div>
+											<div class="student_name">Willie Silas Burnett</div>
+										</td>
+										<td>
+											<div class="student_status_icon not_ok_status_icon">
+												<img src="../img/not_ok_status.png">
+											</div>
+											<div class="student_name">Dion Bentley</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="student_status_icon ok_status_icon">
+												<img src="../img/ok_status.png">
+											</div>
+											<div class="student_name">Micheal Gerry Jame</div>
+										</td>
+										<td>
+											<div class="student_status_icon ok_status_icon">
+												<img src="../img/ok_status.png">
+											</div>
+											<div class="student_name">Bryon Nash Allen</div>
+										</td>
+										<td>
+											<div class="student_status_icon ok_status_icon">
+												<img src="../img/ok_status.png">
+											</div>
+											<div class="student_name">Jorge Mcclure</div>
+										</td>
+										<td>
+											<div class="student_status_icon">
+												<img src="../img/part_ok_status.png">
+											</div>
+											<div class="student_name">Willie Silas Burnett</div>
+										</td>
+										<td>
+											<div class="student_status_icon">
+												<img src="../img/part_ok_status.png">
+											</div>
+											<div class="student_name">Dion Bentley</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="student_status_icon ok_status_icon">
+												<img src="../img/ok_status.png">
+											</div>
+											<div class="student_name">Willie Silas Burnett</div>
+										</td>
+										<td>
+											<div class="student_status_icon not_ok_status_icon">
+												<img src="../img/not_ok_status.png">
+											</div>
+											<div class="student_name">Bryon Nash Allen</div>
+										</td>
+										<td>
+											<div class="student_status_icon ok_status_icon">
+												<img src="../img/ok_status.png">
+											</div>
+											<div class="student_name">Opal Waller</div>
+										</td>
+										<td>
+											<div class="student_status_icon ok_status_icon">
+												<img src="../img/ok_status.png">
+											</div>
+											<div class="student_name">Willie Silas Burnett</div>
+										</td>
+										<td>
+											<div class="student_status_icon ok_status_icon">
+												<img src="../img/ok_status.png">
+											</div>
+											<div class="student_name">Jorge Mcclure</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="student_status_icon ok_status_icon">
+												<img src="../img/ok_status.png">
+											</div>
+											<div class="student_name">Lorene Sullivan</div>
+										</td>
+										<td>
+											<div class="student_status_icon not_ok_status_icon">
+												<img src="../img/not_ok_status.png">
+											</div>
+											<div class="student_name">Bryon Nash Allen</div>
+										</td>
+										<td>
+											<div class="student_status_icon not_ok_status_icon">
+												<img src="../img/not_ok_status.png">
+											</div>
+											<div class="student_name">Jorge Mcclure</div>
+										</td>
+										<td>
+											<div class="student_status_icon">
+												<img src="../img/orally.png">
+											</div>
+											<div class="student_name">Opal Waller</div>
+										</td>
+										<td>
+											<div class="student_status_icon">
+												<img src="../img/ok_status.png">
+											</div>
+											<div class="student_name">Dion Bentley</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="student_status_icon ok_status_icon">
+												<img src="../img/ok_status.png">
+											</div>
+											<div class="student_name">Rubin Faulkner</div>
+										</td>
+										<td>
+											<div class="student_status_icon ok_status_icon">
+												<img src="../img/ok_status.png">
+											</div>
+											<div class="student_name">Bryon Nash Allen</div>
+										</td>
+										<td>
+											<div class="student_status_icon">
+												<img src="../img/ok_status.png">
+											</div>
+											<div class="student_name">Opal Waller</div>
+										</td>
+										<td>
+											<div class="student_status_icon ok_status_icon">
+												<img src="../img/ok_status.png">
+											</div>
+											<div class="student_name">Willie Silas Burnett</div>
+										</td>
+										<td>
+											<div class="student_status_icon">
+												<img src="../img/not_ok_status.png">
+											</div>
+											<div class="student_name">Dion Bentley</div>
+										</td>
+									</tr>
+								</table>
+								<div class="students_status_handel"><div></div></div>	
+							</div>
+						</section>
+						<section  class="resaults_panel">
+							<div class="teacher_instructions">
+								<div class="up_arrow"></div>
+								<span>Click on students names above to view each student answer</span>		
+							</div>
+							<div class="resaults_panel_wrapper">
+								<div class="student_buble">
+									<div class="student_arrow_box">
+										<p class="student_buble_name"></p>
+									</div>
+								</div><!-- end of student buble -->
+								<!-- =================================================== student answers section ================================================ -->
+								<div class="panel_student_question">
+									<!-- no answer text -->
+									<div class="no_answer hide">no answer yet</div>
+									<!-- open question example -->
+									<div class="open_question for_example hide">
+										<h3 class="text_header_blue">In what way did the Tefila impact the soldiers and the commanding officer himself?</h3>
+										<textarea class="close_question_area"></textarea>
+									</div>
+									<!-- open question example with multiple questions -->
+									<div class="for_example hide">	
+										<div class="open_question ">
+											<h3 class="text_header_blue">In what way did the Tefila impact the soldiers and the commanding officer himself?</h3>
+											<textarea class="close_question_area"></textarea>
+										</div>
+										<div class="open_question ">
+											<h3 class="text_header_blue">In what way did the Tefila impact the soldiers and the commanding officer himself?</h3>
+											<textarea class="close_question_area"></textarea>
+										</div>
+									</div>	
+									<!-- seker question -->
+									<div class="for_example selection hide">
+										<div id="selection_name" class="selection_wrapper">
+											<div class="s_table_cell">
+												<h3 class="text_header_blue">To what extent are you able to concentrate during  Tefila, without other thoughts disturbing you? </h3>
+												<!-- -question1 blue-->
+												<section class="selection_item_blue selection_q_item">
+													<div class="item_circ item_circ_blue"><span class="item_circle_text">1</span></div>
+													<div class="selection_text">Always </div>
+												</section>
+												<!-- question2 green -->
+												<section class="selection_item_green selection_q_item">
+													<div class="item_circ  item_circ_green"><span class="item_circle_text">2</span></div>
+													<div class="selection_text">Almost always</div>
+												</section>
+												<!-- question3 orange -->
+												<section class="selection_item_orange selection_q_item">
+													<div class="item_circ  item_circ_orange"><span class="item_circle_text">3</span></div>
+													<div class="selection_text">Generally   </div>
+												</section>
+												<!-- question4 pink -->
+												<section class="selection_item_pink selection_q_item resaults_selected_item_pink">
+													<div class="item_circ  item_circ_pink"><span class="item_circle_text">4</span></div>
+													<div class="selection_text">Sometimes    </div>
+												</section>
+													<!-- question5 pink -->
+												<section class="selection_item_turquoise selection_q_item">
+													<div class="item_circ  item_circ_turquoise"><span class="item_circle_text">5</span></div>
+													<div class="selection_text">Almost never      </div>
+												</section>
+														<!-- question5 pink -->
+												<section class="selection_item_red selection_q_item">
+													<div class="item_circ  item_circ_red"><span class="item_circle_text">6</span></div>
+													<div class="selection_text">Never      </div>
+												</section>
+											</div><!-- end of s_table_cell -->
+										</div><!--end of selection wrapper -->
+									</div><!-- end of selection -->
+									<!-- multiple seqer question -->
+									<div class="for_example seker_multiple hide" id="seker_multiple hide">
+										<h3 class="text_header_blue">Click on the word or phrase that best defines your prayer experience. </h3>
+										<div class="seker_multiple_wrapper">
+											<div class="seker_multiple_item">Mitzva</div>
+											<div class="seker_multiple_item">Connection to Hashem</div>
+											<div class="seker_multiple_item resaults_selected_seker_multiple">Meditation</div>
+											<div class="seker_multiple_item">Spiritual Elevation</div>
+											<div class="seker_multiple_item">Obligation</div>
+											<div class="seker_multiple_item">Encounter with Hashem</div>
+											<div class="seker_multiple_item">Requirement</div>
+											<div class="seker_multiple_item">Introspection</div>
+											<div class="seker_multiple_item">Conversation with Hashem</div>
+											<div class="seker_multiple_item">Expression of Faith</div>
+											<div class="seker_multiple_item">Religious Act</div>
+											<div class="seker_multiple_item">Mystical Experience</div>
+											<div class="clearfix"></div>	
+										</div>			
+									</div><!-- end of ultiple seqer question -->
+									<!-- like dislike -->
+									<div class="for_example like_dislike hide">
+										<h3 class="text_header_blue">How do you feel about the course of action of the driver?</h3>
+										<div class="like_dislike_wrapper">
+											<div class="but_container but_container_selected_like">
+												<div class="like_but"></div>
+												<span class="like_text">Like</span>
+											</div>
+											<div class="but_container">
+												<div class="dislike_but"></div>
+												<span class="dislike_text">Dislike</span>
+											</div>
+										</div>
+									</div><!-- end of like dislike -->
+									<!-- GROUP MATCHING -->
+									<!-- ****************groups matching question********************************************* -->
+									<div  class="for_example global_groups_container hide">
+										<p class="instruction text_header_blue">Below there is a list of places. Which places do you think are appropriate for Tefila and which not? </p>
+									
+										<!-- ========================================================================== -->
+										<!-- *************************** GROUPS SECTION******************************** -->
+										<!-- ========================================================================== -->
+										<div class="g_groups_container g_groups_container_resaults">
+
+										<!-- ***************************** group 1 ************************************ -->
+										
+											<div id="paringroup_container_1" class="paringroup_container paringroup_container_resaults">
+												<div class="paring_group_groups_circ_blue"></div>
+												<div class="pg_container_blue">
+													<div class="paring_group_groups_backImg_blue"></div>
+													<h2 class="text_header_blue ">Appropriate</h2>
+														<!--  initial-->
+														<div id="initial_wrapper_group1" class="initial_wrapper hide">
+															<div class="initila_group_display">
+																Select the correct item and click here
+															</div>
+														</div>	
+															<!-- item 1-->
+															<div id="group_item_1_selected_g1" class="paring_group_item selected_group_item">
+																<div class="paring_group_inner_wrapper">
+																	<div class="item_line item_line_color_1"></div>
+																	<sapn>Home</span><span class="delete_item">x</span>
+																</div>
+															</div>
+														<!-- item 2-->
+															<div id="group_item_2_selected_g1" class="paring_group_item selected_group_item ">
+																<div class="paring_group_inner_wrapper">
+																	<div class="item_line item_line_color_2"></div>
+																	<span>Stadium</span><span class="delete_item">x</span>
+																</div>
+															</div>
+														<!-- item 3-->
+														<div id="group_item_3_selected_g1" class="paring_group_item selected_group_item ">
+															<div class="paring_group_inner_wrapper">
+																<div class="item_line item_line_color_3"></div>
+																<span>Kotel HaMaaraví </span><span class="delete_item">x</span>
+															</div>
+														</div>
+														<!-- item 4-->
+														<div id="group_item_4_selected_g1" class="paring_group_item selected_group_item">
+															<div class="paring_group_inner_wrapper">
+																<div class="item_line item_line_color_4"></div>
+																<span>Street </span><span class="delete_item">x</span>
+															</div>
+														</div>
+														<!-- item 5-->
+														<div id="group_item_5_selected_g1" class="paring_group_item selected_group_item hide">
+															<div class="paring_group_inner_wrapper">
+																<div class="item_line item_line_color_5"></div>
+																<span>Car or Bus </span><span class="delete_item">x</span>
+															</div>
+														</div>
+														<!-- item 6-->
+														<div id="group_item_6_selected_g1" class="paring_group_item selected_group_item hide">
+															<div class="paring_group_inner_wrapper">
+																<div class="item_line item_line_color_6"></div>
+																<span>Classroom </span><span class="delete_item">x</span>
+															</div>
+														</div>
+														<!-- item 7-->
+														<div id="group_item_7_selected_g1" class="paring_group_item selected_group_item hide">
+															<div class="paring_group_inner_wrapper">
+																<div class="item_line item_line_color_7"></div>
+																<span>Field </span><span class="delete_item">x</span>
+															</div>
+														</div>
+														<!-- item 8-->
+														<div id="group_item_8_selected_g1" class="paring_group_item selected_group_item hide">
+															<div class="paring_group_inner_wrapper">
+																<div class="item_line item_line_color_8"></div>
+																<span>Office</span><span class="delete_item">x</span>
+															</div>
+														</div>
+													</div><!--end of pg_container_blue -->
+											
+											</div>	<!-- end of paringroup_container -->
+											<!-- **************************  group 2 ****************************************** -->
+											<div id="paringroup_container_2" class="paringroup_container paringroup_container_resaults">
+												<div class="paring_group_groups_circ_blue"></div>
+												<div class="pg_container_blue">
+													<div class="paring_group_groups_backImg_blue"></div>
+													<h2 class="text_header_blue ">Not Appropriate</h2>
+														<!--  initial-->
+														<div id="initial_wrapper_group2" class="initial_wrapper hide">
+															<div class="initila_group_display">
+																Select the correct item and click here
+															</div>
+														</div>	
+															<!-- item 1-->
+															<div id="group_item_1_selected_g2" class="paring_group_item selected_group_item hide">
+																<div class="paring_group_inner_wrapper">
+																	<div class="item_line item_line_color_1"></div>
+																	<span>Home</span><span class="delete_item">x</span>
+																</div>
+															</div>
+														<!-- item 2-->
+															<div id="group_item_2_selected_g2" class="paring_group_item selected_group_item hide ">
+																<div class="paring_group_inner_wrapper">
+																	<div class="item_line item_line_color_2"></div>
+																	<span>Stadium</span><span class="delete_item">x</span>
+																</div>
+															</div>
+														<!-- item 3-->
+														<div id="group_item_3_selected_g2" class="paring_group_item selected_group_item hide ">
+															<div class="paring_group_inner_wrapper">
+																<div class="item_line item_line_color_3"></div>
+																<span>Kotel HaMaaraví </span><span class="delete_item">x</span>
+															</div>
+														</div>
+														<!-- item 4-->
+														<div id="group_item_4_selected_g2" class="paring_group_item selected_group_item hide ">
+															<div class="paring_group_inner_wrapper">
+																<div class="item_line item_line_color_4"></div>
+																<span>Street </span><span class="delete_item">x</span>
+															</div>
+														</div>
+														<!-- item 5-->
+														<div id="group_item_5_selected_g2" class="paring_group_item selected_group_item ">
+															<div class="paring_group_inner_wrapper">
+																<div class="item_line item_line_color_5"></div>
+																<span>Car or Bus </span><span class="delete_item">x</span>
+															</div>
+														</div>
+														<!-- item 6-->
+														<div id="group_item_6_selected_g2" class="paring_group_item selected_group_item ">
+															<div class="paring_group_inner_wrapper">
+																<div class="item_line item_line_color_6"></div>
+																<span>Classroom </span><span class="delete_item">x</span>
+															</div>
+														</div>
+														<!-- item 7-->
+														<div id="group_item_7_selected_g2" class="paring_group_item selected_group_item ">
+															<div class="paring_group_inner_wrapper">
+																<div class="item_line item_line_color_7"></div>
+																<span>Field </span><span class="delete_item">x</span>
+															</div>
+														</div>
+														<!-- item 8-->
+														<div id="group_item_8_selected_g2" class="paring_group_item selected_group_item ">
+															<div class="paring_group_inner_wrapper">
+																<div class="item_line item_line_color_8"></div>
+																<span>Office </span><span class="delete_item">x</span>
+															</div>
+														</div>
+													</div><!--end of pg_container_blue -->
+											
+											</div>	<!-- end of paringroup_container -->
+											<!-- **************************  END group 2 ****************************************** -->
+															
+										</div><!--end of g_groups_container -->	
+									</div><!--end of global_groups_container -->
+									<!-- ****************question_bank ********************************************* -->
+									<div class="question_bank for_example hide">
+										<h3 class="text_header_blue"> Instruction text comes here</h3>
+											<div class="text_bank_wrapp">
+												<span>
+													It is a long established fact that a reader
+												</span>
+												<span class="question_bank_input bank_group_item_2">variations</span>
+												<span>will be distracted by the readable content of a page when looking </span>
+												<span class="question_bank_input bank_group_item_1">Lorem Ipsum </span>
+												
+												<span> is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>
+												<span class="question_bank_input bank_group_item_3">believable</span>
+												
+												<span>he point of using Lorem Ipsum is that it has a more-or-less norma</span>
+												<span class="question_bank_input bank_group_item_1">chunks</span>
+
+												<span>istribution of letters, as opposed to using 'Content here</span>
+												<span class="question_bank_input bank_group_item_4">handful</span>
+												<span>ontent here', making it look like readable Englis</span>
+												<span class="question_bank_input bank_group_item_2">words</span>
+												<span>Many desktop publishing</span>
+												<span class="question_bank_input bank_group_item_1">Lorem Ipsum</span>
+											</div>
+									</div>
+									<!-- ****************item_match ********************************************* -->	
+									<div class="item_match_results for_example hide">
+										<h3 class="text_header_blue">Match the pesukim that are parallel:</h3>
+										<ul id="selected_items_match" class="selected_items_match">
+											<li class='merged_items_display link_color_0'>
+												<div>בָּרוּךְ אֱלקֵינוּ שֶׁבְּרָאָנוּ לִכְבוֹדוֹ ו... וְנָתַן לָנוּ תּוֹרַת אֱמֶת</div>
+												<img src='../img/link_icon.png'>
+												<div>גָּדוֹל ה' וּמְהֻלָּל מְאֹד וְלִגְדֻלָּתוֹ אֵין חֵקֶר</div>
+											</li>
+											<li class='merged_items_display link_color_1'>
+												<div>text1</div>
+												<img src='../img/link_icon.png'>
+												<div>text2</div>
+											</li>
+											<li class='merged_items_display link_color_2'>
+												<div>text1</div>
+												<img src='../img/link_icon.png'>
+												<div>text2</div>
+											</li>
+											<li class='merged_items_display link_color_3'>
+												<div>text1</div>
+												<img src='../img/link_icon.png'>
+												<div>text2</div>
+											</li>
+
+										</ul>
+										<div class="clearfix"></div>
+									</div><!-- end of item match -->
+									<!-- ****************seker_slider ********************************************* -->
+									<div class="slider_wrapper for_example hide">
+										<h3 class="text_header_blue">To what extent do you consider that you felt excited to see the video?</h3>
+									<div class="slider_values_wrapp">
+										<div id="slider"></div><!--jquery slider -->
+									
+										<div class="slider_values_table">
+												<div class="slider_value_item">
+													<div id="slider_val_10" class="slider_circle slider_circel_background"></div>
+													<div class="slider_num_blue">01</div>
+												</div>
+												<div  class="slider_value_item">
+													<div id="slider_val_20" class="slider_circle slider_circel_background"></div>
+													<div class="slider_num_blue">02</div>
+												</div>
+												<div class="slider_value_item">
+													<div id="slider_val_30" class="slider_circle slider_circel_background"></div>
+													<div class="slider_num_blue">03</div>
+												</div>
+												<div class="slider_value_item">
+													<div id="slider_val_40" class="slider_circle slider_circel_background"></div>
+													<div class="slider_num_blue">04</div>
+												</div>
+												<div class="slider_value_item">
+													<div id="slider_val_50" class="slider_circle slider_circel_background_blue"></div>
+													<div class="slider_num_blue">05</div>
+												</div>
+												<div class="slider_value_item">
+													<div id="slider_val_60" class="slider_circle slider_circel_background"></div>
+													<div class="slider_num_blue">06</div>
+												</div>
+												<div class="slider_value_item">
+													<div id="slider_val_70" class="slider_circle slider_circel_background"></div>
+													<div class="slider_num_blue">07</div>
+												</div>
+												<div class="slider_value_item">
+													<div id="slider_val_80" class="slider_circle slider_circel_background"></div>
+													<div class="slider_num_blue">08</div>
+												</div>
+												<div class="slider_value_item">
+													<div id="slider_val_90" class="slider_circle slider_circel_background"></div>
+													<div class="slider_num_blue">09</div>
+												</div>
+												<div class="slider_value_item">
+													<div id="slider_val_100" class="slider_circle slider_circel_background"></div>
+													<div class="slider_num_blue">10</div>
+												</div>
+										</div><!-- end of slider_values_table -->
+									</div>
+								</div><!--end of panel_student_question -->
+							</div><!-- end of resaults_panel_wrapper -->
+								<div class="clearfix"></div>
+								<div class="resaults_footer">
+									<!--<div class="resaults_buts_wrapp">
+										<div class="next_prev_resaults_but">
+											<span> < Previous</span>
+										</div>
+										<div class="next_prev_resaults_but">
+											<span>Next ></span>
+										</div>
+									</div>-->	
+									<div class="resaults_display_but button_blue">
+										<span>Display</span>
+									</div>
+								</div>	
+							</div><!-- end of resaults_panel_wrapper -->
+							
+						</section><!-- end of resaults_panel -->
+					</div><!-- end of results_content_wrapp -->
+			</section>
+		</div><!-- end of display wrapper -->	
+		<!-- ********************************************** FOOTER PLAY BUTS ***************************************** -->
+		<footer>
+			<div style="position:relative;width:100%;height:100%;">
+				<div class="footer_wrapper footer_back"></div>
+				<div class="play_buts_wrapper">
+					<div class="play_table_row">
+						<div class="teacher_play_but back_blue gradient"><img class="play_icon" src="../img/prev_icon.png"></div>
+						<div class="seperator_blue"></div>
+						<div class="teacher_play_but back_blue gradient"><img class="play_icon" src="../img/next_icon.png"></div>
+					</div>	
+				</div>
+			</div>
+		</footer>
+
+	</div><!-- end of teacher main wrapper -->
+
+		<!--  ************************************************************************************************************************ -->
+		<!-- ========================================== TEACHER ADD QUESTIONS POP UP ================================================= -->
+		<!-- ************************************************************************************************************************* -->
+		<div id="teacher_popup">
+			<header class="teacher_popup_header">
+				<div class="table_row">
+					<p class="table_cell add_new_header">Add New Slide</p>
+					<p class="table_cell hide preview_header">02 – slide name goes here  </p>
+					<div  id="teacher_close_pop_up"  class="table_cell float-right">
+						<span class="pop_up_close_text">Close</span><span class="popup_close_blue">x</span>
+					</div>
+				</div>
+			</header>
+			<section id="question_items_wrapper">			
+				<div class="newSlide_icon_wrapper play_param_width" id="text_q" data-header="Text & Open Question">
+					<div  class="question_item_circ text_q"></div>
+					<p>Text & Open Question</p>
+				</div>		
+				<div class="newSlide_icon_wrapper play_param_width" id="text_paragraph" data-header="Text Paragraph">
+					<div class="question_item_circ text_paragraph"></div>
+					<p>Text Paragraph</p>
+				</div>	
+				<div id="open_q" class="newSlide_icon_wrapper play_param_width" data-header="Open Question">
+					<div class="question_item_circ open_q"></div>
+					<p>Open Question</p>
+				</div>
+			</section><!-- END OF QUESTIONS ITEM WRAPPER -->
+			<!-- *********************** ADD EDIT ITEMS CONTAINER *********************************** -->
+			<section id="add_edit_container">
+				<div class="add_edit_header_blue">
+					<div id="add_new_back"  title="Back"></div>
+					<div class="add_edit_header_text">
+						<img src="../img/add_Edit_items/add_text_q.png">
+						<span id="add_edit_header_text"></span>
+					</div>	
+				</div>
+				
+				<div  class="add_edit_item_wrapp">
+					<!-- text paragraph + open question-->
+					<div id="text_q_item" class="add_edit_inner_content">
+						<input typpe="text" placeholder="Type here the header text">
+						<div class="add_edit_editor_placeholder">
+							<header></header>
+							<div class="editor_content">Type here the paragraph text</div>	
+						</div>
+						<textarea placeholder="Type here the question text"></textarea>
+					</div>
+					<!-- text paragraph -->
+					<div id="text_paragraph_item" class="add_edit_inner_content">
+						<input typpe="text" placeholder="Type here the header text">
+						<div class="add_edit_editor_placeholder">
+							<header></header>
+							<div class="editor_content">Type here the paragraph text</div>	
+						</div>
+					</div>
+					<!-- open question-->
+					<div id="open_q_item" class="add_edit_inner_content">
+						<textarea placeholder="Type here the question text"></textarea>
+					</div>
+				</div><!--end of add_edit_item_wrapp -->
+
+					<!-- *********************** ADD EDIT slide name *********************************** -->
+					<div class="add_slide_name">
+						<div class="slide_name_wrapp">
+							<p>Slide Name</p>
+							<input class="addSlide_name_input" type="text" value="Slide number '#'  - text paragraph">
+						</div>	
+					</div>		
+
+				<!-- ******************FOOTER************************************************** -->
+					<div class="add_edit_footer">
+						<div class="table_row">
+							<!--<div class="table_cell"><a id="add_text_back"> < Back</a></div>-->
+							<div id="add_slide_but" class="table_cell float-right add_button">
+								<div class="button_blue"><span>Add Slide</span></div>
+							</div>
+						</div>
+					</div>
+			</section><!-- end of add_edit_container -->
+			<!-- *********************** Preview ITEMS CONTAINER *********************************** -->
+			<section id="preview_slides_container">
+					<section id="play_panel_popup" class="play_panel_width">
+						<div>hello</div>
+					</section>
+				<section class="teacher_display">
+					<div class="teacher_display_wrapper_popup">
+						<div class="note">
+							<h3 class="text_header_blue">Ramchal, Mesilat Yesharim Ch. 19</h3>
+				    		<p>
+				    			he person is really against Hashem and converses with him, even though the human eye can not grasp it and therefore it is difficult to aptherepreciate what the heart and the senses do not help. However, having a clear mind, with some reasoning, paying attention, may lay on your heart the truth that is really dialogue with Hashem, and he begs and he asks while he hears and attends his words, in the same way a person speaks to his neighbor and his neighbor listens	
+				    		</p>
+						</div><!-- end of note -->
+							<!-- selection question -->
+						<div class="selection">
+							<div id="selection_name" class="selection_wrapper">
+								<div class="s_table_cell">
+									<h3 class="text_header_blue">According to Judaism, ideally percebir Tefillah as:</h3>
+									<!-- -question1 blue-->
+									<section class="selection_item_blue selection_q_item">
+										<div class="item_circ item_circ_blue"><span class="item_circle_text">1</span></div>
+										<div class="selection_text">A religious obligation</div>
+									</section>
+									<!-- question2 green -->
+									<section class="selection_item_green selection_q_item">
+										<div class="item_circ  item_circ_green"><span class="item_circle_text">1</span></div>
+										<div class="selection_text">An encounter with Hashemn</div>
+									</section>
+									<!-- question3 orange -->
+									<section class="selection_item_orange selection_q_item">
+										<div class="item_circ  item_circ_orange"><span class="item_circle_text">1</span></div>
+										<div class="selection_text">An encounter with Hashemn</div>
+									</section>
+									
+								</div><!-- end of s_table_cell -->
+							</div><!--end of selection wrapper -->
+						</div><!-- end of selection -->
+							<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>test this more
+						<!--  put here more question items -->
+							
+					</div><!-- end of teacher display wrapper -->
+					<div class="add_edit_footer">
+						<div class="table_row">
+							<!--<div class="table_cell"><a id="add_text_back"> < Back</a></div>-->
+							<div id="add_slide_but" class="table_cell float-right add_button">
+								<div class="button_blue"><span>Display to Class</span></div>
+							</div>
+						</div>
+					</div>
+				</section>
+					
+			</section>		
+			
+	</div>
+	<!-- ========================================= stop lesson dialog =================================================== -->
+	<div id="dialog-stop" title="Stop Lesson">
+		<div class="dialog_delete_wrapper">
+			<div class="delete_alert_icon"></div>
+			<div class="delete_alert_text">Stop this lesson? </span>
+		</div>	
+	</div>
+</body>
+<script>
+
+
+	$(document).ready(function(){
+	//var height=window.screen.availHeight;
+	//var width=window.screen.availWidth;
+	//alert(" height is "+height + " width is "+ width);
+
+
+
+	
+
+
+	window.onorientationchange = function()
+	{
+  		 window.location.reload();
+	}
+
+    TriggerClick = 0;
+    innerTriggerClick = 0;
+    //get the play panel width in pixels for better display in all the responsive views
+    play_panel_width=$("#play_panel").width();
+    play_panel_width_handel= -1*(parseInt(play_panel_width)-1);
+	$("#play_panel").css("margin-right",play_panel_width_handel);//set initial right margin\
+
+	// ****************************** CLOSE OPEN CONNRECTED STATUS PANEL ********************************** //
+	$("#connected_status_link").click(function(){
+		//alert("hi")
+		$(".connected_panel").slideToggle();
+	})
+
+	// *******************    SLIDE RESAULTS PANEL LEFT *******************************************************
+	// the play panel is open by changing its margin and applying css transition effect
+	/*********************************************************************************************** */
+	$(".handel_wrapp").click(function(){
+	var panel_width=$(window).width()*0.93; //calculate 93% of window width
+	 if(TriggerClick==0){
+     	TriggerClick=1;
+     	$('#play_panel').addClass('play_panel_move');//add transition functionality
+     	$('#play_panel').css("margin-right","0")
+		}	
+		else{
+			 TriggerClick=0;
+			 	$('#play_panel').css("margin-right",play_panel_width_handel)
+		};	
+	});	
+	// ***********************  OPEN THE INNER PLAY PANEL *********************************************
+	// the play panel is open by changing its margin and applying css transition effect
+	/*********************************************************************************************** */
+		$(".students_status_handel").click(function(){
+			if(innerTriggerClick==0){
+				innerTriggerClick=1
+				$(".students_status").css("height", "2%") //pushe student status panel up
+				$(".students_status").addClass('play_panel_move'); // add transition css functionality
+				$(".students_status_handel div").css("background-position","bottom center") //change background arrow position
+				$(".status_table").fadeOut();//hide panel content
+				$(".resaults_panel").css("height","90%");//move the resaults panel up
+				$(".resaults_panel").addClass('play_panel_move'); // add transition css functionality
+			}
+			else{
+				innerTriggerClick=0
+				$(".students_status").css("height", "45%") //pushe student status panel up
+				$(".students_status").addClass('play_panel_move');
+				$(".students_status_handel div").css("background-position","top center") //change background arrow position
+				$(".status_table").fadeIn();//show panel content
+				$(".resaults_panel").css("height","50%");//move the resaults panel up
+				$(".resaults_panel").addClass('play_panel_move'); // add transition css functionality
+
+			}
+		
+		})
+// ******************************* change content in the resaults panel when clicking on the student status  //
+var selected_index = 2 // global variable for demonstrating the various questions
+$('.resaults_display_but').hide();
+$('.status_table td').click(function(){
+	$(".resaults_panel_wrapper").show();
+	$(".teacher_instructions").hide();
+	$('.status_table td').removeClass("student_status_selected") //remove selected class from all the cells
+	$(this).addClass("student_status_selected") //add selected class to this cell
+	/* ---------------------------------------------------------------------------------------------------------------- */
+	/* change icon color from green to white in selected mode */
+	/*each icon with ok status is added the class ok_status_icon the function uses this class in order to determine to which icon change the color in his selected mode  */
+	/* --------------------------------------------------------------------------------------------------------------------- */
+	$('.ok_status_icon').find('img').attr('src','../img/ok_status.png') //change all ok status icons to green
+	$(this).find('.ok_status_icon img').attr('src','../img/ok_status_selected.png') //change selected ok status icon to white
+
+	// cahnge the student name according to selected click//
+	var selected_student_name=$(this).find('.student_name').text() 
+	$(".student_arrow_box p").text(selected_student_name)
+	// change inner questions display. this section is here only for demonstration reasons -    this section is only for disply purpuses of the selected answers
+	if($(this).find('.student_status_icon').hasClass('not_ok_status_icon')){
+		$('.for_example').addClass('hide');
+		$('.no_answer').removeClass('hide');
+		$('.resaults_display_but').hide();
+		
+	}
+	else{
+		$('.no_answer').addClass('hide');
+		$('.resaults_display_but').show()
+		$('.for_example').addClass('hide');
+
+		$('.for_example:nth-child('+selected_index+')').removeClass('hide')
+		if(selected_index==10){
+			selected_index=2
+		}
+		else{
+		selected_index=parseInt(selected_index)+1
+	}	
+
+}
+
+});
+
+
+// **************************** stop lesson dialog *******************************************************
+// Link to open the dialog
+	$( "#dialog-link" ).click(function( event ) {
+
+		$( "#dialog-stop" ).dialog( "open" );
+		event.preventDefault();
+	});
+
+$( "#dialog-stop").dialog({
+			autoOpen: false,
+			width: 400,
+			buttons: [
+				{
+					text: "Stop",
+					click: function() {
+						$( this ).dialog( "close" );
+						$(".stop_lesson_icon").removeClass('stop_lesson_active').addClass('stop_lesson_not_active')
+						$(".play_lesson_triangle").removeClass('hide');
+						$(".play_lesson_x").addClass('hide');
+						$(".stop_lesson_text").text("Play Lesson")
+					}
+				},
+				{
+					text: "Cancel",
+					click: function() {
+						$( this ).dialog( "close" );
+					}
+				}
+			]
+		}); 	
+
+
+/* set the slider value */
+$("#slider").slider('value',50);
+	
+
+});
+	
+
+	
+
+	</script>
+</html>
